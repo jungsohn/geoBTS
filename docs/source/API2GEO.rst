@@ -1,7 +1,7 @@
 API RP 2GEO
 ============
 
-Mudmat
-------
+Shallow Foundation
+-------------------
 
 Equations
