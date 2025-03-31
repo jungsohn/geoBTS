@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'geoBTS'
+copyright = '2025, geo Web Apps'
+author = 'Dr.Sohn'
 
 release = '0.1'
 version = '0.1.0'
