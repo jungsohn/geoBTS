@@ -1,22 +1,16 @@
-Welcome to Lumache's documentation!
+Welcome to geoBTS's documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+**geoBTS** is a Python library for geotechnical engineering
 
 .. note::
 
-   This project is under active development.
+   Please reach out to Dr. Sohn if you have any questions.
 
 Contents
 --------
 
 .. toctree::
 
-   usage
-   api
+   API2GEO
+   shallow_foundatoin
