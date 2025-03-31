@@ -1,11 +1,3 @@
-.. raw:: html
-
-   <style>
-   .darkred { color: darkred; }
-   </style>
-
-.. role:: darkred
-
 Web Appls in Geotechnical Engineering
 =======================================
 
