@@ -9,7 +9,7 @@
 Web Appls in Geotechnical Engineering
 =======================================
 
-of Best Practices for :darkred:`T`exas A&M University by Dr. Sohn
+of Best Practices for Texas A&M University by Dr. Sohn
 ------------------------------------------------------
 
-TBD
+:darkred:`T`BD
