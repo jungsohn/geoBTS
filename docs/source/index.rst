@@ -13,4 +13,4 @@ Contents
 .. toctree::
 
    API2GEO
-   Shallow_Foundation
+   Mudmat
