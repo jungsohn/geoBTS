@@ -1,7 +1,15 @@
+.. raw:: html
+
+   <style>
+   .darkred { color: darkred; }
+   </style>
+
+.. role:: darkred
+
 Web Appls in Geotechnical Engineering
 =======================================
 
-for Best Practice, Texas A&M University by Dr. Sohn
-----------------------------------------------------
+of Best Practices for :darkred:`T`exas A&M University by Dr. Sohn
+------------------------------------------------------
 
 TBD
