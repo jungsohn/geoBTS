@@ -13,4 +13,4 @@ Contents
 .. toctree::
 
    API2GEO
-   shallow_foundatoin
+   shallow_foundation
