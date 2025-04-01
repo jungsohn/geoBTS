@@ -28,38 +28,38 @@ API RP 2GEO
 7.6. Drained
 ............................
 
-    eq6) Qd' = (Pe * (Nq - 1) * Kq + 0.5 * GAMe * Be * Ng * Kg) * Ae
+- eq6) Qd' = (Pe * (Nq - 1) * Kq + 0.5 * GAMe * Be * Ng * Kg) * Ae
 
-        eq7) Qo = 0.5 * GAMe * B * Ng * Ao
+        - eq7) Qo = 0.5 * GAMe * B * Ng * Ao
 
-        eq8) Qd' = 0.3 * GAMe * B * Ng * A
+        - eq8) Qd' = 0.3 * GAMe * B * Ng * A
 
 7.6. Displacement
 ............................
 
-Short-term
+- Short-term
 
-    eq9) Uv = (1 - v)/(4*G*R) * Q
+    - eq9) Uv = (1 - v)/(4*G*R) * Q
 
-    eq10) Uh = ((7 - 8*v)/(32 * (1 - v) * G * R)) * H
+    - eq10) Uh = ((7 - 8*v)/(32 * (1 - v) * G * R)) * H
 
-    eq11) THEr = (3*(1 - v)/(8 * G * R**3)) * M
+    - eq11) THEr = (3*(1 - v)/(8 * G * R**3)) * M
 
-    eq12) THEt = (3/(16 * G * R**3)) * T
+    - eq12) THEt = (3/(16 * G * R**3)) * T
 
-Long-term
+- Long-term
 
-    eq13) Uv = (h*C / (1 + e0)) * np.log10((qo + dq)/qo)
+    - eq13) Uv = (h*C / (1 + e0)) * np.log10((qo + dq)/qo)
 
-Sliding
+- Sliding
 
-    eq14) Hd = Suo * A
+    - eq14) Hd = Suo * A
 
-    eq15) Hd' = Q * np.tan(np.radians(phi))
+    - eq15) Hd' = Q * np.tan(np.radians(phi))
 
-Torsion
+- Torsion
 
-    FYI) 
+    - FYI) 
 
 8. Pile Foundation
 --------------------
