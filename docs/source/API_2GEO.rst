@@ -41,7 +41,7 @@ API RP 2GEO
 
         - A.20) dc = 0.3 * (SuAVE/Su2) * np.atan(D/Be)
 
-                - Su2 = ??
+                - Su2 = F * (Nc * Su0 + k * Beff / 4) / Nc
 
         - A.21) bc = 0.4 * v == 0
 
@@ -134,7 +134,7 @@ API RP 2GEO
 
     Scv = np.interp(x, list_kBeff_over_Su0, list_Scv)
 
-    Su2 = F * (Nc * Cu0 + k * Beff / 4) / Nc
+    Su2 = 
 
     geo_ic = 0.5 - 0.5 * (1 - geo_H / (Aeff * Cu0)) ** 0.5 #(A.21)
 
