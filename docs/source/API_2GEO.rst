@@ -18,6 +18,8 @@ API RP 2GEO
 
     eq5) Qd = F * (Nc * Su0 + k * Beff / 4) * Kc * Ae
 
+        Su0 = SuML + k * z
+
 7.6. Drained
 ............................
 
