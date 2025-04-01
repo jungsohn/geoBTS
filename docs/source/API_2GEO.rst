@@ -16,7 +16,7 @@ API RP 2GEO
 7.5. Undrained: Linearly increasing Su
 ............................
 
-    eq5) Qd = F * (Nc * Cu0 + k * Beff / 4) * Kc * Ae
+    eq5) Qd = F * (Nc * Su0 + k * Beff / 4) * Kc * Ae
 
 7.6. Drained
 ............................
@@ -44,7 +44,9 @@ Long-term
 
     eq13) Uv = (h*C / (1 + e0)) * np.log10((qo + dq)/qo)
 
+Sliding
 
+    eq14) Hd = Suo * A
 
     Sc = 1 + (Beff / Leff) * (Nq / Nc)  # p243 (C6.13.1-7)
 
