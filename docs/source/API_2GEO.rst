@@ -20,6 +20,20 @@ Equations
 
     api_Qv = Aeff * (Su_fail * Nc * api_Kc + (SUW + UWw) * D)
 
+    def F_2geo(a, b, c, d, x):
+        return a + b * x - ((c + b * x)**2 + d**2)**0.5  # 계산식 (A.17)
+
+    x = k * Beff / Cu0
+
+    Scv = np.interp(x, list_kBeff_over_Su0, list_Scv)
+
+    Su2 = F * (Nc * Cu0 + k * Beff / 4) / Nc
+
+    geo_ic = 0.5 - 0.5 * (1 - geo_H / (Aeff * Cu0)) ** 0.5 #(A.21)
+
+    geo_Qv = F * (Nc * Cu0 + k * Beff / 4) * geo_Kc * Aeff # (eq.5)
+
+
 
 Deep Foundation
 ----------------
