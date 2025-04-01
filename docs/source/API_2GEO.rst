@@ -30,7 +30,15 @@ API RP 2GEO
 7.6. Displacement
 ............................
 
+    eq9) Uv = (1 - v)/(4*G*R) * Q
 
+    eq10) Uh = ((7 - 8*v)/(32 * (1 - v) * G * R)) * H
+
+    eq11) THEr = (3*(1 - v)/(8 * G * R**3)) * M
+
+    eq12) THEt = (3/(16 * G * R**3)) * T
+
+    eq13) Uv = (h*C / (1 + e0)) * np.log10((qo + dq)/qo)
 
     Sc = 1 + (Beff / Leff) * (Nq / Nc)  # p243 (C6.13.1-7)
 
