@@ -20,6 +20,11 @@ API RP 2GEO
 
         Su0 = SuML + k * z
 
+        def F_2geo(a, b, c, d, x):
+            return a + b * x - ((c + b * x)**2 + d**2)**0.5  # 계산식 (A.17)
+
+        x = k * Beff / Cu0
+
 7.6. Drained
 ............................
 
@@ -50,6 +55,16 @@ Sliding
 
     eq14) Hd = Suo * A
 
+    eq15) Hd' = Q * np.tan(np.radians(phi))
+
+Torsion
+
+    FYI) 
+
+8. Pile Foundation
+--------------------
+
+
     Sc = 1 + (Beff / Leff) * (Nq / Nc)  # p243 (C6.13.1-7)
 
     mL = (2 + Leff / Beff) / (1 + Leff / Beff)
@@ -64,10 +79,7 @@ Sliding
 
     api_Qv = Aeff * (Su_fail * Nc * api_Kc + (SUW + UWw) * D)
 
-    def F_2geo(a, b, c, d, x):
-        return a + b * x - ((c + b * x)**2 + d**2)**0.5  # 계산식 (A.17)
 
-    x = k * Beff / Cu0
 
     Scv = np.interp(x, list_kBeff_over_Su0, list_Scv)
 
