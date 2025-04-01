@@ -7,7 +7,7 @@ API RP 2GEO
 7.4. Undrained: Constant Su
 .................
 
-- eq2) Qd = Su * Nc * Kc * Ae
+- eq.2) Qd = Su * Nc * Kc * Ae
 
         - eq3) Qo = 5.14 * Su * Ao
 
@@ -16,7 +16,7 @@ API RP 2GEO
 7.5. Undrained: Linearly increasing Su
 ............................
 
-- eq5) Qd = F * (Nc * Su0 + k * Beff / 4) * Kc * Ae
+- eq.5) Qd = F * (Nc * Su0 + k * Beff / 4) * Kc * Ae
 
         - Su0 = SuML + k * z
 
@@ -25,14 +25,16 @@ API RP 2GEO
 
         - x = k * Beff / Cu0
 
+- A.1)
+
 7.6. Drained
 ............................
 
-- eq6) Qd' = (Pe * (Nq - 1) * Kq + 0.5 * GAMe * Be * Ng * Kg) * Ae
+- eq.6) Qd' = (Pe * (Nq - 1) * Kq + 0.5 * GAMe * Be * Ng * Kg) * Ae
 
-        - eq7) Qo = 0.5 * GAMe * B * Ng * Ao
+        - eq.7) Qo = 0.5 * GAMe * B * Ng * Ao
 
-        - eq8) Qd' = 0.3 * GAMe * B * Ng * A
+        - eq.8) Qd' = 0.3 * GAMe * B * Ng * A
 
 7.6. Displacement
 ............................
