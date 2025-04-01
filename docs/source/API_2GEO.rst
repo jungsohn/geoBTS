@@ -16,16 +16,20 @@ API RP 2GEO
 7.5. Undrained: Linearly increasing Su
 ............................
 
-- eq.5) Qd = F * (Nc * Su0 + k * Beff / 4) * Kc * Ae
+- eq.5) Qd = F * (Nc * Su0 + k * Be / 4) * Kc * Ae
 
         - Su0 = SuML + k * z
 
         - def F_2geo(a, b, c, d, x):
             return a + b * x - ((c + b * x)**2 + d**2)**0.5  # 계산식 (A.17)
 
-        - x = k * Beff / Cu0
+        - x = k * Be / Cu0
 
-- A.1)
+- A.1) dH = Kru * SuAVE * Ah
+
+        - SuAVE = (SuML + Su0)
+
+        - Kru = from 2 to 4
 
 7.6. Drained
 ............................
@@ -36,28 +40,34 @@ API RP 2GEO
 
         - eq.8) Qd' = 0.3 * GAMe * B * Ng * A
 
+- A.2) dH = 0.5 * Krd * GAMe * Db * Ah
+
+        - A.3) Krd = Kp - 1/Kp
+
+        - A.4) Kp = (np.tan(np.radians(45 + 0.5*phi)))**2
+
 7.6. Displacement
 ............................
 
 - Short-term
 
-    - eq9) Uv = (1 - v)/(4*G*R) * Q
+    - eq.9) Uv = (1 - v)/(4*G*R) * Q
 
-    - eq10) Uh = ((7 - 8*v)/(32 * (1 - v) * G * R)) * H
+    - eq.10) Uh = ((7 - 8*v)/(32 * (1 - v) * G * R)) * H
 
-    - eq11) THEr = (3*(1 - v)/(8 * G * R**3)) * M
+    - eq.11) THEr = (3*(1 - v)/(8 * G * R**3)) * M
 
-    - eq12) THEt = (3/(16 * G * R**3)) * T
+    - eq.12) THEt = (3/(16 * G * R**3)) * T
 
 - Long-term
 
-    - eq13) Uv = (h*C / (1 + e0)) * np.log10((qo + dq)/qo)
+    - eq.13) Uv = (h*C / (1 + e0)) * np.log10((qo + dq)/qo)
 
 - Sliding
 
-    - eq14) Hd = Suo * A
+    - eq.14) Hd = Suo * A
 
-    - eq15) Hd' = Q * np.tan(np.radians(phi))
+    - eq.15) Hd' = Q * np.tan(np.radians(phi))
 
 - Torsion
 
