@@ -43,9 +43,11 @@ API RP 2GEO
 
                 - Su2 = F * (Nc * Su0 + k * Beff / 4) / Nc
 
-        - A.21) bc = 0.4 * v == 0
+        - A21) ic = 0.5 - 0.5 * (1 - He / (Ae * Su0)) ** 0.5
 
-        - A.22) gc = 0.4 * b == 0
+        - A.22) bc = 0.4 * v == 0
+
+        - A.23) gc = 0.4 * b == 0
 
 
 - A.1) dH = Kru * SuAVE * Ah
@@ -110,11 +112,11 @@ API RP 2GEO
 
 - Torsion
 
-    - FYI) 
+    - FYI)
 
-8. Pile Foundation
---------------------
 
+FYI from the API RP 2A
+............................
 
     Sc = 1 + (Beff / Leff) * (Nq / Nc)  # p243 (C6.13.1-7)
 
@@ -131,12 +133,12 @@ API RP 2GEO
     api_Qv = Aeff * (Su_fail * Nc * api_Kc + (SUW + UWw) * D)
 
 
+8. Pile Foundation
+--------------------
 
-    Scv = np.interp(x, list_kBeff_over_Su0, list_Scv)
 
-    Su2 = 
 
-    geo_ic = 0.5 - 0.5 * (1 - geo_H / (Aeff * Cu0)) ** 0.5 #(A.21)
+
 
 
 
