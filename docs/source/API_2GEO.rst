@@ -69,11 +69,21 @@ API RP 2GEO
 
         - eq.8) Qd' = 0.3 * GAMe * B * Ng * A
 
+        - A.24) Kq = iq * sq * dq * bq * gq
+
+                - A.25) iq = (1 - 0.5*(H/Q))**5
+
+                - A.26) sq = 1 + iq * (B/Le) * np.sin(np.radians(phi))
+
+                - A.27) dq = q + 1.2 * (D/Be) * np.tan(np.radians(phi)) * (1 - np.sin(np.radians(phi)))**2
+
+
 - A.2) dH = 0.5 * Krd * GAMe * Db * Ah
 
         - A.3) Krd = Kp - 1/Kp
 
         - A.4) Kp = (np.tan(np.radians(45 + 0.5*phi)))**2
+
 
 7.6. Displacement
 ............................
