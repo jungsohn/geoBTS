@@ -16,14 +16,14 @@ API RP 2GEO
 7.5. Undrained: Linearly increasing Su
 ............................
 
-    eq5) Qd = F * (Nc * Su0 + k * Beff / 4) * Kc * Ae
+- eq5) Qd = F * (Nc * Su0 + k * Beff / 4) * Kc * Ae
 
-        Su0 = SuML + k * z
+        - Su0 = SuML + k * z
 
-        def F_2geo(a, b, c, d, x):
+        - def F_2geo(a, b, c, d, x):
             return a + b * x - ((c + b * x)**2 + d**2)**0.5  # 계산식 (A.17)
 
-        x = k * Beff / Cu0
+        - x = k * Beff / Cu0
 
 7.6. Drained
 ............................
