@@ -12,5 +12,5 @@ Contents
 
 .. toctree::
 
-   API2GEO
+   API_2GEO
    Mudmat
