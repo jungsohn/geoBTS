@@ -1,6 +1,6 @@
-Web Appls in Geotechnical Engineering
+Web Apps in Geotechnical Engineering
 =======================================
 
-The Best Practices for Texas A&M University by Dr. Sohn
+The "B"est Practices in "T"exas by Dr."S"ohn
 
 Link of the manual: https://geobts.readthedocs.io/en/latest/
