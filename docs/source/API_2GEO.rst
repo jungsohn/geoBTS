@@ -9,9 +9,9 @@ API RP 2GEO
 
 - eq2) Qd = Su * Nc * Kc * Ae
 
-        eq3) Qo = 5.14 * Su * Ao
+        - eq3) Qo = 5.14 * Su * Ao
 
-        eq4) Qd = 6.05 * Su * A
+        - eq4) Qd = 6.05 * Su * A
 
 7.5. Undrained: Linearly increasing Su
 ............................
