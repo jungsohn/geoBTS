@@ -1,7 +1,7 @@
 Welcome to geoBTS's documentation!
 ===================================
 
-**geoBTS** is a Python library for geotechnical engineering
+**geoBTS** is a Web Applications for geotechnical engineers
 
 .. note::
 
