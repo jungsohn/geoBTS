@@ -120,6 +120,14 @@ API RP 2GEO
 
     - FYI)
 
+A.7.12 Penetration of skirts
+............................
+
+- A.30) Qr = Qf + Qp = f * As + q * Ap
+
+- Removal
+
+        - FYI)
 
 FYI from the API RP 2A
 ............................
