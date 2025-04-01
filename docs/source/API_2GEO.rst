@@ -13,6 +13,14 @@ API RP 2GEO
 
         - eq4) Qd = 6.05 * Su * A
 
+        - A.10) Kc = 1 + sc + dc - ic - bc - gc
+
+                - A.11) sc = 0.18 * (1 - 2*ic)*(Be/Le)
+
+                - A.12) dc = 0.3*np.atan(D/Be)
+
+                - A.13) ic = 0.5 - 0.5*(1 - He/(Ae*Su))**0.5
+
 7.5. Undrained: Linearly increasing Su
 ............................
 
@@ -20,16 +28,37 @@ API RP 2GEO
 
         - Su0 = SuML + k * z
 
-        - def F_2geo(a, b, c, d, x):
-            return a + b * x - ((c + b * x)**2 + d**2)**0.5  # 계산식 (A.17)
+        - A.16) Kc = 1 + sc + dc - ic - bc - gc
 
-        - x = k * Be / Cu0
+        - A.17) def F_2geo(a, b, c, d, x):
+                    return a + b * x - ((c + b * x)**2 + d**2)**0.5
+
+                - x = k * Be / Su0
+
+        - A.18) sc = scv * (1 - w*ic)*(Be/Le)
+
+                - A.19) scv = 0.18 - 0.1155 * x**0.5 + 0.021 * x
+
+        - A.20) dc = 0.3 * (SuAVE/Su2) * np.atan(D/Be)
+
+                - Su2 = ??
+
+        - A.21) bc = 0.4 * v == 0
+
+        - A.22) gc = 0.4 * b == 0
+
 
 - A.1) dH = Kru * SuAVE * Ah
 
         - SuAVE = (SuML + Su0)
 
         - Kru = from 2 to 4
+
+- A.8) Le = L - 2*e1, Be = B - 2*e2
+
+        - Le = Lx - 2*ex
+
+        - Be = By - 2*ey
 
 7.6. Drained
 ............................
