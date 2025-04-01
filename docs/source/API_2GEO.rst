@@ -1,10 +1,36 @@
 API RP 2GEO
 ============
 
-Shallow Foundation
--------------------
+7. Shallow Foundation
+--------------------
 
-Equations
+7.4. Undrained: Constant Su
+.................
+
+    eq2) Qd = Su * Nc * Kc * Ae
+
+        eq3) Qo = 5.14 * Su * Ao
+
+        eq4) Qd = 6.05 * Su * A
+
+7.5. Undrained: Linearly increasing Su
+............................
+
+    eq5) Qd = F * (Nc * Cu0 + k * Beff / 4) * Kc * Ae
+
+7.6. Drained
+............................
+
+    eq6) Qd' = (Pe * (Nq - 1) * Kq + 0.5 * GAMe * Be * Ng * Kg) * Ae
+
+        eq7) Qo = 0.5 * GAMe * B * Ng * Ao
+
+        eq8) Qd' = 0.3 * GAMe * B * Ng * A
+
+7.6. Displacement
+............................
+
+
 
     Sc = 1 + (Beff / Leff) * (Nq / Nc)  # p243 (C6.13.1-7)
 
@@ -31,7 +57,6 @@ Equations
 
     geo_ic = 0.5 - 0.5 * (1 - geo_H / (Aeff * Cu0)) ** 0.5 #(A.21)
 
-    geo_Qv = F * (Nc * Cu0 + k * Beff / 4) * geo_Kc * Aeff # (eq.5)
 
 
 
