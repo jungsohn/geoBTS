@@ -5,7 +5,7 @@ Welcome to geoBTS's documentation!
 
 .. note::
 
-   Please reach out to Dr. Sohn if you have any questions.
+   "B"est practices in "T"exas by Dr. "S"ohn
 
 Contents
 --------
