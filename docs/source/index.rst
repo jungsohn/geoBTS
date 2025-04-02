@@ -1,11 +1,11 @@
 Welcome to geoBTS's documentation!
 ===================================
 
-**geoBTS** is a Web Applications for geotechnical engineers
+**geoBTS** is a Web App library for geotechnical engineers
 
 .. note::
 
-   "B"est practices in "T"exas by Dr. "S"ohn
+   The "B"est practices in "T"exas by Dr. "S"ohn
 
 Contents
 --------
@@ -13,4 +13,5 @@ Contents
 .. toctree::
 
    API_2GEO
+   ISO_19901_4
    Mudmat
