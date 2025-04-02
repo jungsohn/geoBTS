@@ -67,6 +67,10 @@ API RP 2GEO
 
 - eq.6) Qd' = (Pe * (Nq - 1) * Kq + 0.5 * GAMe * Be * Ng * Kg) * Ae
 
+        - Nq = np.exp(np.pi * np.tan(np.radians(phi)) )* np.tan(np.radians(45 + phi/2))
+
+        - Ng = 1.5 * (Nq - 1) * np.tan(np.radians(phi))
+
         - phi should be relevant to triaxial conditions (phi_TX), because the phi_PS is 10 % higher than phi_TX.
 
         - eq.7) Qo = 0.5 * GAMe * B * Ng * Ao
@@ -79,7 +83,7 @@ API RP 2GEO
 
                 - A.26) sq = 1 + iq * (B/Le) * np.sin(np.radians(phi))
 
-                - A.27) dq = q + 1.2 * (D/Be) * np.tan(np.radians(phi)) * (1 - np.sin(np.radians(phi)))**2
+                - A.27) dq = 1 + 1.2 * (D/Be) * np.tan(np.radians(phi)) * (1 - np.sin(np.radians(phi)))**2
 
                 - A.28) bq = np.exp(-2*v*np.tan(np.radians(phi)))
 
