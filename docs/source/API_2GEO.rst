@@ -77,17 +77,17 @@ API RP 2GEO
 
         - eq.8) Qd' = 0.3 * GAMe * B * Ng * A
 
-        - A.24) Kq = iq * sq * dq * bq * gq
+        - A.24) Kq = iq * sq * dq * bq * gq ,  Kg = ig * sg * dg * bg * gg
 
-                - A.25) iq = (1 - 0.5*(H/Q))**5
+                - A.25) iq = (1 - 0.5*(H/Q))**5,  ig = (1 - 0.7*(H/Q))**5
 
-                - A.26) sq = 1 + iq * (B/Le) * np.sin(np.radians(phi))
+                - A.26) sq = 1 + iq * (B/Le) * np.sin(np.radians(phi)),  sg = 1 - 0.4 * ig * (B/Le)
 
-                - A.27) dq = 1 + 1.2 * (D/Be) * np.tan(np.radians(phi)) * (1 - np.sin(np.radians(phi)))**2
+                - A.27) dq = 1 + 1.2 * (D/Be) * np.tan(np.radians(phi)) * (1 - np.sin(np.radians(phi)))**2, dg = 1
 
-                - A.28) bq = np.exp(-2*v*np.tan(np.radians(phi)))
+                - A.28) bq = np.exp(-2 * v * np.tan(np.radians(phi))),  bg = np.exp(-2.7 * v * np.tan(np.radians(phi)))
 
-                - A.29) gq = (1 - 0.5 * np.tan(np.radians(b)))**5
+                - A.29) gq = (1 - 0.5 * np.tan(np.radians(b)))**5,  gg = gq
 
 
 - A.2) dH = 0.5 * Krd * GAMe * Db * Ah
