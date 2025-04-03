@@ -12,7 +12,6 @@ Contents
 
 .. toctree::
    :maxdepth: 1
-   :hidden:
 
    API_2GEO
    ISO_19901_4
