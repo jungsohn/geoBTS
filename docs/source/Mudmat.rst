@@ -1,21 +1,19 @@
 Mudmat
 ===================
 
-Background Theory
-------------------
-
-Terzaghi bearing capacity (WebApp)
-..........................
-
-- Link: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/Terzaghi_bearing_capacity
+Background Theory (WebApp)
+-------------------------
 
 
-Offshore
----------
+- Terzaghi bearing capacity: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/Terzaghi_bearing_capacity
 
-- Clay:
 
-- Sand:
+Offshore (WebApp)
+--------------
+
+- Clay: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_clay
+
+- Sand: TBD
 
 
 
