@@ -1,4 +1,6 @@
-<img src="https://github.com/jungsohn/geoBTS/blob/main/docs/images/logo_geoBTS.jpg" width=100>
+.. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/logo_geoBTS.jpg
+   :alt: geoBTS Logo
+   :width: 100px
 
 
 Welcome to geoBTS's documentation!
