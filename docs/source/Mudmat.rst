@@ -7,8 +7,6 @@ Background Theory (WebApp)
 Terzaghi (1943)
 ................
 
-- Equation: qu = c*Nc + GAM*Df*Nq + 0.5*GAM*B*Ng
-
 - Key assumptions: Strip footing with Homogenenous soil
 
 - Limitation: No shape or depth adjustment
@@ -17,8 +15,6 @@ Terzaghi (1943)
 
 Meyerhof (1951,1963)
 ....................
-
-- Equation: qu = c*Nc*Kc + GAM*Df*Nq*Kq + 0.5*GAM*B*Ng*Kg
 
 - Key assumptions: 
 
