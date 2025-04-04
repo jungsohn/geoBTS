@@ -1,7 +1,4 @@
-.. image:: logo_geoBTS.png
-   :alt: Example Image
-   :width: 600
-   :align: center
+<img src="https://github.com/jungsohn/geoBTS/blob/main/logo_geoBTS.png" width=800>
 
 Web Apps for Geotechnical Engineers
 =======================================
