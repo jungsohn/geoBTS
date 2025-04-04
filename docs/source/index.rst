@@ -1,7 +1,6 @@
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/logo_geoBTS.jpg
    :alt: geoBTS Logo
-   :width: 100px
-
+   :width: 150px
 
 Welcome to geoBTS's documentation!
 ===================================
