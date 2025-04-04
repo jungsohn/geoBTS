@@ -2,7 +2,7 @@
    :alt: geoBTS Logo
    :width: 150px
 
-geoBTS: Web App library for geotechnical engineers
+Web App library for geotechnical engineers
 ==================================================
 
 The "B"est practices in "T"exas by Dr, "S"ohn.
