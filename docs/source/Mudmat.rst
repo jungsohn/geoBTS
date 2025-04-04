@@ -40,4 +40,4 @@ Offshore (WebApp)
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/Grok_Terzaghi.png
    :alt: geoBTS Logo
-   :width: 400px
+   :width: 800px
