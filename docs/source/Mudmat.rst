@@ -13,6 +13,7 @@ Terzaghi (1943)
   - strip footing
 
 - Limitation:
+
   - No Fh nor Moment
   - No shape foundation
   - Simple contrant soil
