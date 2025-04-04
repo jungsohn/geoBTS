@@ -19,7 +19,7 @@ Meyerhof (1951,1963)
 - Key assumptions: 
 
   - Apply K factors to Terzaghi's
-  - Updated Nc, Nq, and Ng: For example, phi=30 --> Ng (Meyerhof) = 20, while Ng (Terzaghi) = 15
+  - Updated Ng: For example, phi=30 --> Ng (Meyerhof) = 20, while Ng (Terzaghi) = 15
 
 Vesic (1973)
 ....................
