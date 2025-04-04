@@ -2,10 +2,10 @@
    :alt: geoBTS Logo
    :width: 150px
 
-Welcome to geoBTS's documentation!
-===================================
+geoBTS: Web App library for geotechnical engineers
+==================================================
 
-**geoBTS** is a Web App library for geotechnical engineers. The "B"est practices in "T"exas by Dr, "S"ohn.
+The "B"est practices in "T"exas by Dr, "S"ohn.
 
 It contains some links of Web Apps, and the permission will be managed with passwords.
 
