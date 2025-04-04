@@ -36,11 +36,3 @@ Offshore (WebApp)
 - Clay: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_clay
 
 - Sand: TBD
-
-
-.. table:: Comparison of Shallow Foundation Bearing Capacity Theories
-
-**Notes**:  
-- :math:`q_u`: Ultimate bearing capacity  
-- :math:`c`: Cohesion, :math:`\gamma`: Soil unit weight, :math:`D`: Foundation depth, :math:`B`: Foundation width, :math:`\phi`: Friction angle  
-- Each subsequent theory builds on the previous one, adding complexity and applicability.
