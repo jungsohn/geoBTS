@@ -20,5 +20,5 @@ Contents
    Mudmat
    Suction_Pile
    Driven_Pile
-   NGI_Lab_Interpretation
-   Fugro_Lab_Interpretation
+   Lab_Testing
+   
