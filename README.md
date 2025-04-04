@@ -2,7 +2,7 @@
 
 Web Apps for Geotechnical Engineers
 =======================================
-<span style="color: blue;">The "B"est Practices in "T"exas by Dr."S"ohn</span>
+<font color="red">Web Apps for Geotechnical Engineers</font>
 
 The "B"est Practices in "T"exas by Dr."S"ohn
 
