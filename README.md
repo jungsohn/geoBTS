@@ -2,7 +2,10 @@
 
 Web Apps for Geotechnical Engineers
 =======================================
-<font color="red">Web Apps for Geotechnical Engineers</font>
+
+<svg width="400" height="40">
+  <text x="10" y="30" font-size="20" fill="green">Web Apps for Geotechnical Engineers</text>
+</svg>
 
 The "B"est Practices in "T"exas by Dr."S"ohn
 
