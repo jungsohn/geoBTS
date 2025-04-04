@@ -1,3 +1,8 @@
+.. image:: logo_geoBTS.png
+   :alt: Example Image
+   :width: 600
+   :align: center
+
 Web Apps for Geotechnical Engineers
 =======================================
 
