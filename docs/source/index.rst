@@ -18,5 +18,7 @@ Contents
    API_2GEO
    ISO_19901_4
    Mudmat
+   Suction_Pile
+   Driven_Pile
    NGI_Lab_Interpretation
    Fugro_Lab_Interpretation
