@@ -9,26 +9,27 @@ Terzaghi (1943)
 
 - Equation: qu = c*Nc + GAM*Df*Nq + 0.5*GAM*B*Ng
 
-- Feature: Only strip footing
+- Key assumptions: Strip footing with Homogenenous soil
 
-- Limitation:
-
-  - No Fh nor Moment
-  - No shape foundation
-  - Simple contrant soil
+- Limitation: No shape or depth adjustment
 
 - WebApp: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/Terzaghi_bearing_capacity
 
 Meyerhof (1951,1963)
-............
+....................
 
 - Equation: qu = c*Nc*Kc + GAM*Df*Nq*Kq + 0.5*GAM*B*Ng*Kg
 
-- Feature:
+- Key assumptions: 
 
   - Apply K factors to Terzaghi's
   - Updated Nc, Nq, and Ng: For example, phi=30 --> Ng (Meyerhof) = 20, while Ng (Terzaghi) = 15
 
+Vesic (1973)
+....................
+
+Hansen (1970)
+....................
 
 Offshore (WebApp)
 --------------
