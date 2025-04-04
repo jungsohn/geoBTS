@@ -11,6 +11,8 @@ DNC CN 30.4
 
 - eq.4.4.2.1) qu = 0.5 * SUW * Be * Ng * sg *dg * ig + (Po + a) * Nq * sq * dq * iq
 
+  - a = c * cot(phi)
+
   - eq.4.4.2.4a) iq = (1 - 0.5 * Fh / (Fv + 0))**5
   
   - eq.4.4.2.4b) iq = (1 - 0.7 * Fh / (Fv + 0))**5
