@@ -3,10 +3,6 @@
 Web Apps for Geotechnical Engineers
 =======================================
 
-<svg width="400" height="40">
-  <text x="10" y="30" font-size="20" fill="green">Web Apps for Geotechnical Engineers</text>
-</svg>
-
 The "B"est Practices in "T"exas by Dr."S"ohn
 
 Link of the manual: https://geobts.readthedocs.io/en/latest/
