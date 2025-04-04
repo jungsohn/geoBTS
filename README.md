@@ -1,4 +1,4 @@
-<img src="https://github.com/jungsohn/geoBTS/blob/main/docs/images/logo_geoBTS.jpg" width=800>
+<img src="https://github.com/jungsohn/geoBTS/blob/main/docs/images/logo_geoBTS.jpg" width=200>
 
 Web Apps for Geotechnical Engineers
 =======================================
