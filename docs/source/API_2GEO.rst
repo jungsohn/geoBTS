@@ -155,13 +155,8 @@ FYI from the API RP 2A
 --------------------
 
 
-
-
-
-
-
-
 Deep Foundation
-----------------
+................
+
 
 Equations
