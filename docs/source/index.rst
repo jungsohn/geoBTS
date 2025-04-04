@@ -1,3 +1,6 @@
+<img src="https://github.com/jungsohn/geoBTS/blob/main/docs/images/logo_geoBTS.jpg" width=100>
+
+
 Welcome to geoBTS's documentation!
 ===================================
 
