@@ -7,17 +7,6 @@ API RP 2GEO
 7.4. Undrained: Constant Su
 .................
 
-.. code-block:: python
-
-   y = a * x**2 + b * x + c
-   z = y**2 + 3 * y + 1
-
-여기 식들을 보여줍니다::
-
-    y = a * x**2 + b * x + c
-    z = y**2 + 3 * y + 1
-
-
 
 - eq.2) Qd = Su * Nc * Kc * Ae::
 
@@ -36,7 +25,7 @@ API RP 2GEO
 7.5. Undrained: Linearly increasing Su
 ............................
 
-- eq.5) Qd = F * (Nc * Su0 + k * Be / 4) * Kc * Ae
+- eq.5) Qd = F * (Nc * Su0 + k * Be / 4) * Kc * Ae::
 
         - Su0 = SuML + k * z
 
@@ -62,13 +51,13 @@ API RP 2GEO
         - A.23) gc = 0.4 * b == 0
 
 
-- A.1) dH = Kru * SuAVE * Ah
+- A.1) dH = Kru * SuAVE * Ah::
 
         - SuAVE = (SuML + Su0)
 
         - Kru = from 2 to 4
 
-- A.8) Le = L - 2*e1, Be = B - 2*e2
+- A.8) Le = L - 2*e1, Be = B - 2*e2::
 
         - Le = Lx - 2*ex
 
@@ -77,7 +66,7 @@ API RP 2GEO
 7.6. Drained
 ............................
 
-- eq.6) Qd' = (Pe * (Nq - 1) * Kq + 0.5 * GAMe * Be * Ng * Kg) * Ae
+- eq.6) Qd' = (Pe * (Nq - 1) * Kq + 0.5 * GAMe * Be * Ng * Kg) * Ae::
 
         - Nq = np.exp(np.pi * np.tan(np.radians(phi)) )* np.tan(np.radians(45 + phi/2))
 
