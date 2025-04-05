@@ -32,13 +32,10 @@ API RP 2GEO
 
         - A.17) def F_2geo(a, b, c, d, x):
                     return a + b * x - ((c + b * x)**2 + d**2)**0.5
-
                 - x = k * Be / Su0
 
         - A.16) Kc = 1 + sc + dc - ic - bc - gc
-
                 - A.18) sc = scv * (1 - w*ic)*(Be/Le)
-
                         - A.19) scv = 0.18 - 0.1155 * x**0.5 + 0.021 * x
 
                 - A.20) dc = 0.3 * (SuAVE/Su2) * np.atan(D/Be)
