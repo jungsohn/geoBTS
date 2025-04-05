@@ -5,7 +5,7 @@
 Web App library for geotechnical engineers
 ==================================================
 
-The "B"est practices in "T"exas by Dr, "S"ohn.
+The "B"est practices in "T"exas by Dr."S"ohn.
 
 It contains some links of Web Apps, and the permission will be managed with passwords.
 
