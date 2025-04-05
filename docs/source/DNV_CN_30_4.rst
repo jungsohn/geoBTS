@@ -8,8 +8,8 @@ DNC CN 30.4
 
     - alpha method: fs = alpha * Cu::
 
-    - qp = 9 * Cu * Fc
-    - r: pile aspect ratio = L/D
+        - qp = 9 * Cu * Fc
+        - r: pile aspect ratio = L/D
 
 3. Lateral Pile Resistance
 ---------------------------
