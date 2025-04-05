@@ -24,6 +24,16 @@ DNC CN 30.4
 3. Lateral Pile Resistance
 ---------------------------
 
+3.2 Cohesive soils
+...................
+
+- eq.3.2.1.2a) Pu = (3 * Cu + SUW * X) * D + J * Cu * X
+- eq.3.2.2.1) P/Pu = 0.5 * (y/yc)**(1/3)
+
+3.3 Cohesionless soils
+.......................
+
+- eq.3.3.2.1) P = A * Pu * np.tanh(k*X / (A*Pu) * y)
 
 4. Stability of Gracity Base Foundations
 -----------------------------------------
