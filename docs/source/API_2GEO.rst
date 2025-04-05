@@ -8,7 +8,7 @@ API RP 2GEO
 .................
 
 
-- eq.2) Qd = Su * Nc * Kc * Ae::
+- eq.2) Qd = Su * Nc * Kc * Ae:
 
         - eq3) Qo = 5.14 * Su * Ao
 
@@ -25,7 +25,7 @@ API RP 2GEO
 7.5. Undrained: Linearly increasing Su
 ............................
 
-- eq.5) Qd = F * (Nc * Su0 + k * Be / 4) * Kc * Ae::
+- eq.5) Qd = F * (Nc * Su0 + k * Be / 4) * Kc * Ae:
 
         - Su0 = SuML + k * z
 
