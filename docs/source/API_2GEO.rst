@@ -8,7 +8,7 @@ API RP 2GEO
 .................
 
 
-- eq.2) Qd = Su * Nc * Kc * Ae:
+- eq.2) Qd = Su * Nc * Kc * Ae::
 
         - eq3) Qo = 5.14 * Su * Ao
 
@@ -25,7 +25,7 @@ API RP 2GEO
 7.5. Undrained: Linearly increasing Su
 ............................
 
-- eq.5) Qd = F * (Nc * Su0 + k * Be / 4) * Kc * Ae:
+- eq.5) Qd = F * (Nc * Su0 + k * Be / 4) * Kc * Ae::
 
         - Su0 = SuML + k * z
 
@@ -91,7 +91,7 @@ API RP 2GEO
                 - A.29) gq = (1 - 0.5 * np.tan(np.radians(b)))**5,  gg = gq
 
 
-- A.2) dH = 0.5 * Krd * GAMe * Db * Ah
+- A.2) dH = 0.5 * Krd * GAMe * Db * Ah::
 
         - A.3) Krd = Kp - 1/Kp
 
@@ -101,7 +101,7 @@ API RP 2GEO
 7.6. Displacement
 ............................
 
-- Short-term
+- Short-term::
 
     - eq.9) Uv = (1 - v)/(4*G*R) * Q
 
@@ -111,30 +111,30 @@ API RP 2GEO
 
     - eq.12) THEt = (3/(16 * G * R**3)) * T
 
-- Long-term
+- Long-term::
 
     - eq.13) Uv = (h*C / (1 + e0)) * np.log10((qo + dq)/qo)
 
-- Sliding
+- Sliding::
 
     - eq.14) Hd = Suo * A
 
     - eq.15) Hd' = Q * np.tan(np.radians(phi))
 
-- Torsion
+- Torsion::
 
     - FYI)
 
-A.7.12 Penetration of skirts
+A.7.12 Skirts
 ............................
 
-- A.30) Qr = Qf + Qp = f * As + q * Ap
+- Penetration: A.30) Qr = Qf + Qp = f * As + q * Ap
 
 - Removal
 
         - FYI)
 
-FYI from the API RP 2A
+FYI from the API RP 2A::
 ............................
 
     Sc = 1 + (Beff / Leff) * (Nq / Nc)  # p243 (C6.13.1-7)
