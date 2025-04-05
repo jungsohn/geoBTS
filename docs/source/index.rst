@@ -20,6 +20,6 @@ Contents
    Mudmat
    Suction_Pile
    Driven_Pile
-   Lab_Testing
+   Automated_Soil
    Offshore_Map
    
