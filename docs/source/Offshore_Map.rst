@@ -68,6 +68,10 @@ GoM
 Trinidad and Tobago
 -------------------
 
+.. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/offshore_map_TT_data_from_Grok.png
+   :alt: TT
+   :width: 800px
+
 +------------------------+------------------------+--------------------------+-------------------------+------------------------------------+
 | Platform Name          | Latitude (Approx.)     | Longitude (Approx.)      | Operator                | Notes                              |
 +========================+========================+==========================+=========================+====================================+
@@ -117,6 +121,10 @@ Trinidad and Tobago
 
 North Sea
 ---------
+
+.. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/offshore_map_NS_data_from_Grok.png
+   :alt: NS
+   :width: 800px
 
 +------------------------+------------------------+--------------------------+-------------------------+------------------------------------+
 | Platform Name          | Latitude (Approx.)     | Longitude (Approx.)      | Operator                | Notes                              |
@@ -168,3 +176,7 @@ etc
 ----
 
 - Senegal
+
+.. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/offshore_map_Senegal_data_from_Grok.png
+   :alt: Senegal
+   :width: 800px
