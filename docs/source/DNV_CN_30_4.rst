@@ -4,8 +4,10 @@ DNC CN 30.4
 2. Axial Pile Resistance
 -------------------------
 
-- eq.2.2.2.1) R = Sum(fs * As) + qp * Ap::
-    - alpha method: fs = alpha * Cu
+- eq.2.2.2.1) R = Sum(fs * As) + qp * Ap
+
+    - alpha method: fs = alpha * Cu::
+
     - qp = 9 * Cu * Fc
     - r: pile aspect ratio = L/D
 
