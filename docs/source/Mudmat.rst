@@ -31,7 +31,7 @@ Hansen (1970)
 
   - TBD
 
-Offshore (WebApp)
+Offshore CLAY/SAND (WebApp)
 --------------
 
 - Clay: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_clay
