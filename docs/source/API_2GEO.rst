@@ -12,6 +12,12 @@ API RP 2GEO
    y = a * x**2 + b * x + c
    z = y**2 + 3 * y + 1
 
+여기 식들을 보여줍니다::
+
+    y = a * x**2 + b * x + c
+    z = y**2 + 3 * y + 1
+
+
 
 - `eq.2) Qd = Su * Nc * Kc * Ae`
 
