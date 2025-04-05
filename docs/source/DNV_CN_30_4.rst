@@ -16,3 +16,7 @@ DNC CN 30.4
   - eq.4.4.2.4b) ig = (1 - 0.7 * Fh / (Fv + 0))**5
   - eq.4.4.2.5a) sq = 1 + iq * Be / L * sin(phi)
   - eq.4.4.2.5b) sg = 1 - 0.4 * ig * Be / L
+
+- eq.4.4.4.1) qu = F * (5.14 * Su0 + k * Be / 4) * (1 + sc + dc - ic)::
+  - eq.4.4.3.3) sc = 0.2 * (1-2 * ic) * Be/L
+  - eq.4.4.3.4) dc = 0.3 * np.atan(D/Be)
