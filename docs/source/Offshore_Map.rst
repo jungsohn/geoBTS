@@ -112,17 +112,7 @@ Trinidad and Tobago
 
 
 North Sea
-----------
-
-North Sea Offshore Platforms
-============================
-
-Open source data from Grok
-
-North Sea
 ---------
-
-North Sea 주요 오일 플랫폼 목록:
 
 +------------------------+------------------------+--------------------------+-------------------------+------------------------------------+
 | Platform Name          | Latitude (Approx.)     | Longitude (Approx.)      | Operator                | Notes                              |
