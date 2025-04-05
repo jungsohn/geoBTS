@@ -136,7 +136,6 @@ A.7.12 Skirts
         - FYI)
 
 FYI from the API RP 2A::
-............................
 
     Sc = 1 + (Beff / Leff) * (Nq / Nc)  # p243 (C6.13.1-7)
 
