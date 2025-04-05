@@ -20,6 +20,6 @@ DNC CN 30.4
 - eq.4.4.4.1) qu = F * (5.14 * Su0 + k * Be / 4) * (1 + sc + dc - ic)::
 
   - eq.4.4.3.2) ic = 0.5 - 0.5 * np.sqrt(1 - FH1 / (Ae * su) )
-    - Fh1 = Fh - Rho - Rhp
+  - Fh1 = Fh - Rho - Rhp
   - eq.4.4.3.3) sc = 0.2 * (1-2 * ic) * Be/L
   - eq.4.4.3.4) dc = 0.3 * np.atan(D/Be)
