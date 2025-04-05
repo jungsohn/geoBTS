@@ -6,6 +6,10 @@ Open source data from ChatGPT or Grok
 GoM
 ----
 
+.. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/offshore_map_GoM_data_from_Grok.png
+   :alt: GoM
+   :width: 800px
+
 +------------------------+------------------------+--------------------------+-------------------------+---------------------+
 | Platform Name          | Latitude (Approx.)     | Longitude (Approx.)      | Operator                | Notes               |
 +========================+========================+==========================+=========================+=====================+
