@@ -14,6 +14,12 @@ DNC CN 30.4
     - beta method: fs = K * beta * Po::
 
         - beta = np.tan(np.radians(delta)) 
+        - K = 1 - np.sin(np.radians(phi))
+
+    - lambda method: Rs = lambda * (Sm + 2 * Cm) * As::
+
+        - Sm: mean effectiver overburden pressure
+        - Cm: mean undrained shear strength
 
 3. Lateral Pile Resistance
 ---------------------------
