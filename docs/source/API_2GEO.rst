@@ -7,6 +7,12 @@ API RP 2GEO
 7.4. Undrained: Constant Su
 .................
 
+.. code-block:: python
+
+   y = a * x**2 + b * x + c
+   z = y**2 + 3 * y + 1
+
+
 - `eq.2) Qd = Su * Nc * Kc * Ae`
 
         - eq3) Qo = 5.14 * Su * Ao
