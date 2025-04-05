@@ -11,6 +11,10 @@ DNC CN 30.4
         - qp = 9 * Cu * Fc
         - r: pile aspect ratio = L/D
 
+    - beta method: fs = K * beta * Po::
+
+        - beta = np.tan(np.radians(delta)) 
+
 3. Lateral Pile Resistance
 ---------------------------
 
