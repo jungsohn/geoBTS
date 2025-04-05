@@ -51,7 +51,6 @@ API RP 2GEO
 
                 - A.23) gc = 0.4 * b == 0
 
-
         - A.1) dH = Kru * SuAVE * Ah::
 
                 - SuAVE = (SuML + Su0)
