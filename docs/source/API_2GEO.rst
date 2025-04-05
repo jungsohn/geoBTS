@@ -92,11 +92,11 @@ API RP 2GEO
                 - A.29) gq = (1 - 0.5 * np.tan(np.radians(b)))**5,  gg = gq
 
 
-- A.2) dH = 0.5 * Krd * GAMe * Db * Ah::
+        - A.2) dH = 0.5 * Krd * GAMe * Db * Ah::
 
-        - A.3) Krd = Kp - 1/Kp
+                - A.3) Krd = Kp - 1/Kp
 
-        - A.4) Kp = (np.tan(np.radians(45 + 0.5*phi)))**2
+                - A.4) Kp = (np.tan(np.radians(45 + 0.5*phi)))**2
 
 
 7.6. Displacement
