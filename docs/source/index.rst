@@ -23,18 +23,23 @@ Contents
    Automated_Soil
    Offshore_Map
    
-Contents
---------
+Geotechnical Tools (Part 1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. list-table::
-   :widths: 50 50
-   :header-rows: 0
+.. toctree::
+   :maxdepth: 2
 
-   * - API_2GEO
-     - Mudmat
-   * - ISO_19901_4
-     - Suction_Pile
-   * - Driven_Pile
-     - Automated_Soil
-   * - Offshore_Map
-     -
+   API_2GEO
+   ISO_19901_4
+   Mudmat
+   Suction_Pile
+
+Geotechnical Tools (Part 2)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. toctree::
+   :maxdepth: 2
+
+   Driven_Pile
+   Automated_Soil
+   Offshore_Map
