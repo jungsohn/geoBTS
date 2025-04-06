@@ -23,23 +23,3 @@ Contents
    Automated_Soil
    Offshore_Map
    
-Geotechnical Tools (Part 1)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. toctree::
-   :maxdepth: 2
-
-   API_2GEO
-   ISO_19901_4
-   Mudmat
-   Suction_Pile
-
-Geotechnical Tools (Part 2)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. toctree::
-   :maxdepth: 2
-
-   Driven_Pile
-   Automated_Soil
-   Offshore_Map
