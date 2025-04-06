@@ -13,10 +13,26 @@ Link of the manual: https://geobts.readthedocs.io/en/latest/
 Site Investigatoin
 -------------------
 
+- HSSE
+- CPT
+   - Unified CPT method
+
 Lab
 ----
 
 Foundation: Mudmat
 -------------------
 
+Foundation: Suction Pile
+-------------------
 
+Foundation: Driven Pile
+-------------------
+
+
+Risk: Pipe
+-------------------
+
+
+Risk: Geohazard
+-------------------
