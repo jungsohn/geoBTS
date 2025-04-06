@@ -7,11 +7,16 @@ Web Apps
 Reference
 -------------
 
-Bearing
-.........
+alpha, beta, lambda methods
+...........................
+
+Chain Configuration
+....................
+
 
 Installation
 .............
 
-Chain Configuration
-....................
+Retreival
+.............
+
