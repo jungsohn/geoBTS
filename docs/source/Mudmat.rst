@@ -1,8 +1,16 @@
 Mudmat
 ===================
 
-Background Theory (WebApp)
+Web Apps
 -------------------------
+
+- Land: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/Terzaghi_bearing_capacity
+- Offshore Clay: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_clay
+- Offshore Sand: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_sand
+
+
+Reference
+-----------
 
 Terzaghi (1943)
 ................
@@ -11,7 +19,6 @@ Terzaghi (1943)
 
 - Limitation: No shape or depth adjustment
 
-- WebApp: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/Terzaghi_bearing_capacity
 
 Meyerhof (1951,1963)
 ....................
@@ -30,16 +37,6 @@ Hansen (1970)
 ....................
 
   - TBD
-
-Offshore CLAY/SAND (WebApp)
---------------
-
-- Clay: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_clay
-
-- Sand: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_sand
-
-Reference
------------
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/Grok_Terzaghi.png
    :alt: geoBTS Logo
