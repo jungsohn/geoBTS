@@ -141,6 +141,7 @@ A.7.12 Skirts
                 - but limited by eq.24) PuD = 9 * Su * D for z > zr
                 - zr = 6 * D / (SUW * D / Su + J)
                 - J ranging from 0.25 to 0.5
+
         - Lateral soil resistance: p-y curve
 
 - cohessionless::
@@ -152,5 +153,6 @@ A.7.12 Skirts
         - eq.27) Deep: Pud = C3 * D * SUE * z
                 - C3 is determined by phi
 
-        -
+        - Lateral soil resistance: p-y curve
+                - p = A * Pu * np.tanh( k*z / (A*Pu) * y )
 
