@@ -8,7 +8,7 @@ Web Apps
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-land_bearing_capacity.jpg
    :alt: geoBTS Logo
-   :width: 200px
+   :width: 400px
 
 2. **Offshore Clay**: `Link <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_clay>`_
 
