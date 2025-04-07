@@ -102,8 +102,6 @@ A.7.12 Skirts
 
 - Removal
 
-        - FYI)
-
 
 8. Pile Foundation
 --------------------
@@ -156,3 +154,14 @@ A.7.12 Skirts
         - Lateral soil resistance: p-y curve
                 - p = A * Pu * np.tanh( k*z / (A*Pu) * y )
 
+9. Soil-structure interaction
+------------------------------
+
+
+9.2. Steel catenary risers (SCR)
+.................................
+
+9.3. Top tension riser
+.......................
+
+- eq.32) Gmax / SuDSS = 300 / (PI/100)
