@@ -114,6 +114,7 @@ A.7.12 Skirts
 - eq.16) Qc = f * As + q * Ap
 
 - cohesive::
+
         - eq.17) f = alpha * su
                 - alpha = 0.5 * psi**-0.5 for psi<1
                 - alpha = 0.5 * psi**-0.25 for psi>1
@@ -121,6 +122,7 @@ A.7.12 Skirts
         - eq.20) q = 9 * Su
 
 - cohesionless::
+
         - eq.21) f = beta * P'o
         - eq.22) q = Nq * P'o 
 
