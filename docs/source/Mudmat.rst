@@ -11,8 +11,13 @@ Web Apps
 
 2. **Offshore Clay**: `Link <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_clay>`_
 
+.. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-offshore_mudmat_clay.jpg
+   :width: 600px
+
 3. **Offshore Sand**: `Link <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_sand>`_
 
+.. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-offshore_mudmat_sand.jpg
+   :width: 600px
 
 Reference
 -----------
