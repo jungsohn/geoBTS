@@ -108,6 +108,12 @@ A.7.12 Skirts
 8. Pile Foundation
 --------------------
 
+8.1. Axial compression
+........................
+
+- eq.16) Qc = f * As + q * Ap::
+
+        - eq.17) f = alpha * su
 
 
 TBD
