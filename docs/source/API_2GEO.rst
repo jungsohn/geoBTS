@@ -127,11 +127,20 @@ A.7.12 Skirts
         - eq.22) q = Nq * P'o 
 
 8.4. Soil reaction
+...................
 
 - Axial shear transfer: t-z curve
 - End bearing resistance: Q-z curve
 
 8.5. Lateral load
+..................
 
+- cohesive::
+
+        - eq.23) PuD = 3 * Su * D + SUW * z * D + J * Su * z
+                - but limited by eq.24) PuD = 9 * Su * D for z > zr
+                - zr = 6 * D / (SUW * D / Su + J)
+                - J ranging from 0.25 to 0.5
+        - Lateral soil resistance: p-y curve
 
 TBD
