@@ -8,9 +8,6 @@ Web Apps
 - Offshore Clay: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_clay
 - Offshore Sand: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_sand
 
-.. image:: https://raw.githubusercontent.com/jungsohn/mudmat/main/images/mudmat_sand.jpg
-   :alt: geoBTS Logo
-   :width: 200px
 
 Reference
 -----------
