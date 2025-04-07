@@ -111,9 +111,25 @@ A.7.12 Skirts
 8.1. Axial compression
 ........................
 
-- eq.16) Qc = f * As + q * Ap::
+- eq.16) Qc = f * As + q * Ap
 
+- cohesive::
         - eq.17) f = alpha * su
+                - alpha = 0.5 * psi**-0.5 for psi<1
+                - alpha = 0.5 * psi**-0.25 for psi>1
+                - psi = Su / P'o
+        - eq.20) q = 9 * Su
+
+- cohesionless::
+        - eq.21) f = beta * P'o
+        - eq.22) q = Nq * P'o 
+
+8.4. Soil reaction
+
+- Axial shear transfer: t-z curve
+- End bearing resistance: Q-z curve
+
+8.5. Lateral load
 
 
 TBD
