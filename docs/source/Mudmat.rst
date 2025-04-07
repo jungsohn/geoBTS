@@ -4,11 +4,11 @@ Mudmat
 Web Apps
 -------------------------
 
-1. **Bearing capacity**: `Web App <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/land_bearing_capacity>`_
+1. **Bearing capacity**: `Link <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/land_bearing_capacity>`_
 
-2. **Offshore Clay**: `Web App <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_clay>`_
+2. **Offshore Clay**: `Link <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_clay>`_
 
-3. **Offshore Sand**: `Web App <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_sand>`_
+3. **Offshore Sand**: `Link <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_sand>`_
 
 
 Reference
