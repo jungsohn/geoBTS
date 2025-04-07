@@ -4,9 +4,9 @@ Mudmat
 Web Apps
 -------------------------
 
-- Bearing capacity: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/land_bearing_capacity
-- Offshore Clay: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_clay
-- Offshore Sand: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_sand
+1. Bearing capacity: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/land_bearing_capacity
+2. Offshore Clay: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_clay
+3. Offshore Sand: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_sand
 
 
 Reference
