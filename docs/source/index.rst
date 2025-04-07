@@ -16,10 +16,6 @@ Contents
    :maxdepth: 2
 
    API_2GEO
-   ISO_19901_4
    Mudmat
    Suction_Pile
-   Driven_Pile
-   Automated_Soil
-   Offshore_Map
    
