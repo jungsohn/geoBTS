@@ -99,8 +99,14 @@ A.7.12 Skirts
 ............................
 
 - Penetration: A.30) Qr = Qf + Qp = f * As + q * Ap
+- Removal: N/A
 
-- Removal
+A.7.14 - 15
+............
+
+- Installation: N/A 
+- Sliding: N/A 
+- Torsional: N/A 
 
 
 8. Pile Foundation
