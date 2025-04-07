@@ -7,6 +7,7 @@ Web Apps
 1. **Bearing capacity**: `Link <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/land_bearing_capacity>`_
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-land_bearing_capacity.png
+   :alt: geoBTS Logo
    :width: 200px
 
 2. **Offshore Clay**: `Link <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_clay>`_
