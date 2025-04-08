@@ -10,7 +10,7 @@ Web Apps
 1. **Suction Pile Calculator** – *Coming soon*
 
 
-Design Reference
+Design References
 -----------------
 
 **α, β, λ Methods**
