@@ -1,8 +1,6 @@
 API RP 2GEO
 ============
 
-
-**Note:**  
 This site provides a user-friendly interpretation of API RP 2GEO for educational purposes.  
 All formulas and concepts are used under fair use for engineering education.  
 For the official document, please refer to the American Petroleum Institute (API) publications.
