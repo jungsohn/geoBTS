@@ -9,8 +9,10 @@ Interactive Maps
 
 1. **US Texas Refineries**
 
-2. **Offshore Platforms**
+https://webapp-map-c2c4da073fd2.herokuapp.com/US_onshore_mapping
 
+2. **Offshore Platforms**
+https://webapp-map-c2c4da073fd2.herokuapp.com/offshore_mapping
 
 
 Data Sources
