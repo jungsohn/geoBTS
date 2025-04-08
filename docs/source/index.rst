@@ -26,8 +26,7 @@ for geotechnical engineers, researchers, and students. This site provides access
 
 **🔎 About this site**
 
-🔐 Selected tools require authentication for secure access,  
-but access is provided for free and non-commercial use.  
+🔐 Selected tools require authentication for secure access, but access is provided for free and non-commercial use.  
 
 🛠️ All content is technical in nature and maintained for the benefit of the geotechnical community.  
 
