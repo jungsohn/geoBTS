@@ -1,6 +1,9 @@
 Mudmat
 ===================
 
+This section introduces interactive tools and theoretical references  
+for mudmat foundation design in both onshore and offshore geotechnical conditions.
+
 Web Apps
 -------------------------
 
@@ -19,35 +22,24 @@ Web Apps
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-offshore_mudmat_sand.jpg
    :width: 600px
 
-Reference
------------
+Design References
+------------------
 
-Terzaghi (1943)
-................
-
-- Key assumptions: Strip footing with Homogenenous soil
-
+**Terzaghi (1943)**  
+- Key assumptions: Strip footing with homogeneous soil  
 - Limitation: No shape or depth adjustment
 
+**Meyerhof (1951,1963)**  
+- Key assumptions:  
+  - Apply K factors to Terzaghi's  
+  - Updated Ng: For example, φ = 30 → Ng (Meyerhof) = 20, Ng (Terzaghi) = 15
 
-Meyerhof (1951,1963)
-....................
+**Vesic (1973)**  
+- To be updated soon
 
-- Key assumptions: 
-
-  - Apply K factors to Terzaghi's
-  - Updated Ng: For example, phi=30 --> Ng (Meyerhof) = 20, while Ng (Terzaghi) = 15
-
-Vesic (1973)
-....................
-
-  - TBD
-
-Hansen (1970)
-....................
-
-  - TBD
+**Hansen (1970)**  
+- To be updated soon
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/Grok_Terzaghi.png
-   :alt: geoBTS Logo
+   :alt: geoBTS Terzaghi Illustration
    :width: 800px
