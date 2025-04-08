@@ -21,7 +21,7 @@ for geotechnical engineers, researchers, and students. This site provides access
    Mudmat
    Suction_Pile
 
-   Geot_Map
+   Geotech_Map
    API_2GEO
 
 ----
