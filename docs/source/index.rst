@@ -18,9 +18,11 @@ for geotechnical engineers, researchers, and students. This site provides access
 .. toctree::
    :maxdepth: 2
 
-   API_2GEO
    Mudmat
    Suction_Pile
+
+   Geot_Map
+   API_2GEO
 
 ----
 
