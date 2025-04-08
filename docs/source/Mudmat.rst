@@ -4,7 +4,7 @@ Mudmat
 This section introduces interactive tools and theoretical references  
 for mudmat foundation design in both onshore and offshore geotechnical conditions.
 
-Web Apps
+Web Apps (click the screenshots)
 -------------------------
 
 1. **Bearing Capacity**
