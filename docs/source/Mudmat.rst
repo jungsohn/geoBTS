@@ -11,6 +11,16 @@ Web Apps
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-land_bearing_capacity.jpg
    :target: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/land_bearing_capacity
+   :alt: Bearing Capacity Web App
+   :width: 600px
+
+:ref:`🔗 Open Web App <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/land_bearing_capacity>`
+
+
+
+
+.. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-land_bearing_capacity.jpg
+   :target: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/land_bearing_capacity
    :alt: Bearing Capacity Tool
    :width: 600px
 
