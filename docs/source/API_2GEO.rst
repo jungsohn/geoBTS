@@ -133,8 +133,8 @@ A.7.14 - 15
 
 - cohesionless::
 
-        f = beta * P'o       # eq.21
-        q = Nq * P'o         # eq.22
+f = beta * P'o       # eq.21
+q = Nq * P'o         # eq.22
 
 8.4. Soil reaction
 ...................
