@@ -7,12 +7,9 @@ including site data, offshore structure locations, and interactive spatial analy
 Interactive Maps
 -----------------
 
-1. **US Texas Refineries**
+1. **US Texas Refineries**: https://webapp-map-c2c4da073fd2.herokuapp.com/US_onshore_refineries
 
-https://webapp-map-c2c4da073fd2.herokuapp.com/US_onshore_mapping
-
-2. **Offshore Platforms**
-https://webapp-map-c2c4da073fd2.herokuapp.com/offshore_mapping
+2. **Offshore Platforms**: https://webapp-map-c2c4da073fd2.herokuapp.com/202_offshore_platforms
 
 
 Data Sources
