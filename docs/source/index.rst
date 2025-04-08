@@ -2,12 +2,14 @@
    :alt: geoBTS Logo
    :width: 150px
 
-Web App library for geotechnical engineers
+📘 Web Application Library for Geotechnical Engineers
 ==================================================
 
-The "B"est practices in "T"exas by Dr."S"ohn.
+"Best Practices in Texas" developed by Dr. Sohn.
 
-It contains some links of Web Apps, and the permission will be managed with passwords.
+This site provides access to geotechnical web-based tools and resources.
+Selected tools require authentication for secure access.
+
 
 Contents
 --------
@@ -19,3 +21,5 @@ Contents
    Mudmat
    Suction_Pile
    
+This site is intended for educational and engineering purposes.  
+All content is technical and non-commercial.
