@@ -7,10 +7,6 @@ for mudmat foundation design in both onshore and offshore geotechnical condition
 Web Apps (click the screenshots)
 -------------------------
 
-.. raw:: html
-
-   <div align="center">
-
 1. **Bearing Capacity**
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-land_bearing_capacity.jpg
@@ -28,8 +24,6 @@ Web Apps (click the screenshots)
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-offshore_mudmat_sand.jpg
    :target: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_sand
    :width: 600px
-
-   </div>
 
 
 Design References
