@@ -13,8 +13,6 @@ for geotechnical engineers, researchers, and students.
 
 This site provides access to web-based applications for geotechnical design and analysis.  
 
-🔐 Selected tools require authentication for secure access.
-
 ----
 
 **📂 Contents**
@@ -29,6 +27,8 @@ This site provides access to web-based applications for geotechnical design and 
 ----
 
 **🔎 About this site**
+
+🔐 Selected tools require authentication for secure access.
 
 This site is intended for **educational and engineering purposes**.  
 
