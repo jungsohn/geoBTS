@@ -12,6 +12,12 @@ Web Apps
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-land_bearing_capacity.jpg
    :width: 600px
 
+.. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-land_bearing_capacity.jpg
+   :target: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/land_bearing_capacity
+   :alt: Bearing Capacity Tool
+   :width: 600px
+
+
 2. **Offshore Clay**: `Link <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_clay>`_
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-offshore_mudmat_clay.jpg
