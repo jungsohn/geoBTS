@@ -32,4 +32,4 @@ This site provides access to web-based applications for geotechnical design and 
 This site is intended for **educational and engineering purposes**.  
 All content is **technical and non-commercial**, and maintained for the benefit of the geotechnical community.
 
-For questions or access requests, please contact: `jungsohn@gmail.com <mailto:jungsohn@gmail.com>`_
+For questions or access requests, please contact: `Dr.Sohn <mailto:jung.jungrak.sohn@gmail.com>`_
