@@ -7,10 +7,8 @@ including bearing capacity, installation, retrieval, and chain configuration con
 Web Apps
 -----------------
 
-1. **Suction Pile Calculator**: `Link <https://your-suction-app-url>`_
+1. **Suction Pile Calculator** – *Coming soon*
 
-.. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/suction_pile_main.jpg
-   :width: 600px
 
 Design Reference
 -----------------
@@ -59,8 +57,6 @@ Proper chain angle and padeye position are essential for maintaining vertical al
 - Uplift force :math:`T` acting on the padeye induces both vertical and horizontal components.
 - Design often requires :math:`\theta < 30^\circ` for safe axial load transfer.
 
-.. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/suction_pile_chain_config.jpg
-   :width: 600px
 
 ---
 
