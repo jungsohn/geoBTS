@@ -12,6 +12,7 @@ Welcome to **geoBTS**, an open-source platform offering practical tools and docu
 for geotechnical engineers, researchers, and students.
 
 This site provides access to web-based applications for geotechnical design and analysis.  
+
 🔐 Selected tools require authentication for secure access.
 
 ----
@@ -30,6 +31,7 @@ This site provides access to web-based applications for geotechnical design and 
 **🔎 About this site**
 
 This site is intended for **educational and engineering purposes**.  
+
 All content is **technical and non-commercial**, and maintained for the benefit of the geotechnical community.
 
 For questions or access requests, please contact: `Dr.Sohn <mailto:jung.jungrak.sohn@gmail.com>`_
