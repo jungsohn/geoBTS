@@ -125,16 +125,16 @@ A.7.14 - 15
 
 - cohesive::
 
-        - eq.17) f = alpha * su
-                - alpha = 0.5 * psi**-0.5 for psi<1
-                - alpha = 0.5 * psi**-0.25 for psi>1
-                - psi = Su / P'o
-        - eq.20) q = 9 * Su
+        f = alpha * su    # eq.17
+                alpha = 0.5 * psi**-0.5 # for psi<1
+                alpha = 0.5 * psi**-0.25 # for psi>1
+                psi = Su / P'o
+        q = 9 * Su        # eq.20
 
 - cohesionless::
 
-f = beta * P'o       # eq.21
-q = Nq * P'o         # eq.22
+        f = beta * P'o       # eq.21
+        q = Nq * P'o         # eq.22
 
 8.4. Soil reaction
 ...................
