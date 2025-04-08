@@ -128,13 +128,13 @@ A.7.14 - 15
         f = alpha * su    # eq.17
                 alpha = 0.5 * psi**-0.5 # for psi<1
                 alpha = 0.5 * psi**-0.25 # for psi>1
-                psi = Su / P'o
+                psi = Su / Po
         q = 9 * Su        # eq.20
 
 - cohesionless::
 
-        f = beta * P'o       # eq.21
-        q = Nq * P'o         # eq.22
+        f = beta * Po       # eq.21
+        q = Nq * Po         # eq.22
 
 8.4. Soil reaction
 ...................
@@ -147,7 +147,7 @@ A.7.14 - 15
 
 - cohesive::
 
-        - eq.23) Pu * D = 3 * Su * D + SUW * z * D + J * Su * z
+        Pu * D = 3 * Su * D + SUW * z * D + J * Su * z        # eq.23
                 - but limited by eq.24) PuD = 9 * Su * D for z > zr
                 - zr = 6 * D / (SUW * D / Su + J)
                 - J ranging from 0.25 to 0.5
@@ -156,15 +156,15 @@ A.7.14 - 15
 
 - cohessionless::
 
-        - eq.26) Shallow: Pus = (C1 * z + C2 * D) * SUW * z
-                - C1 is determined by phi
-                - C2 is determined by phi
+        Pus = (C1 * z + C2 * D) * SUW * z        # eq.26 Shallow
+                # C1 is determined by phi
+                # C2 is determined by phi
 
-        - eq.27) Deep: Pud = C3 * D * SUE * z
-                - C3 is determined by phi
+        Pud = C3 * D * SUE * z        # eq.27 Deep
+                # C3 is determined by phi
 
-        - Lateral soil resistance: p-y curve
-                - p = A * Pu * np.tanh( k*z / (A*Pu) * y )
+        p = A * Pu * np.tanh( k*z / (A*Pu) * y )
+                # Lateral soil resistance: p-y curve 
 
 9. Soil-structure interaction
 ------------------------------
