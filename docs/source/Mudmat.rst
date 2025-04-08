@@ -7,11 +7,7 @@ for mudmat foundation design in both onshore and offshore geotechnical condition
 Web Apps
 -------------------------
 
-1. **Bearing capacity**: `Link <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/land_bearing_capacity>`_ 
-
-.. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-land_bearing_capacity.jpg
-   :width: 600px
-
+1. **Bearing capacity**
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-land_bearing_capacity.jpg
    :target: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/land_bearing_capacity
    :alt: Bearing Capacity Tool
