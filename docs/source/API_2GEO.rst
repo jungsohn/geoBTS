@@ -158,7 +158,7 @@ A.7.14 - 15
                 # C1 is determined by phi
                 # C2 is determined by phi
 
-        Pud = C3 * D * SUE * z        # eq.27 Deep
+        Pud = C3 * D * SUE * z                   # eq.27 Deep
                 # C3 is determined by phi
 
         p = A * Pu * np.tanh( k*z / (A*Pu) * y )
