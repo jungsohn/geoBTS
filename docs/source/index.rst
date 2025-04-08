@@ -3,7 +3,7 @@
    :width: 150px
 
 =========================================================
-📘 Web App Library for Geotechnical Engineers
+Web App Library for Geotechnical Engineers
 =========================================================
 
 **"Best Practices in Texas" developed by Dr. Sohn**
@@ -26,10 +26,9 @@ for geotechnical engineers, researchers, and students. This site provides access
 
 **🔎 About this site**
 
-🔐 Selected tools require authentication for secure access.
+🔐 Selected tools require authentication for secure access,  
+but access is provided for free and non-commercial use.  
 
-This site is intended for **educational and engineering purposes**.  
+🛠️ All content is technical in nature and maintained for the benefit of the geotechnical community.  
 
-All content is **technical and non-commercial**, and maintained for the benefit of the geotechnical community.
-
-For questions or access requests, please contact: `Dr.Sohn <mailto:jung.jungrak.sohn@gmail.com>`_
+📬 For questions or access requests, please contact: `Dr.Sohn <mailto:jung.jungrak.sohn@gmail.com>`_
