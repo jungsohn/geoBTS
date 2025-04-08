@@ -8,6 +8,7 @@
 "Best Practices in Texas" developed by Dr. Sohn.
 
 This site provides access to geotechnical web-based tools and resources.
+
 Selected tools require authentication for secure access.
 
 
