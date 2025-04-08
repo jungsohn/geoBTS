@@ -7,33 +7,24 @@ for mudmat foundation design in both onshore and offshore geotechnical condition
 Web Apps
 -------------------------
 
-1. **Bearing capacity**
+1. **Bearing Capacity**
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-land_bearing_capacity.jpg
    :target: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/land_bearing_capacity
-   :alt: Bearing Capacity Web App
    :width: 600px
 
-:ref:`🔗 Open Web App <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/land_bearing_capacity>`
-
-
-
-
-.. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-land_bearing_capacity.jpg
-   :target: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/land_bearing_capacity
-   :alt: Bearing Capacity Tool
-   :width: 600px
-
-
-2. **Offshore Clay**: `Link <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_clay>`_
+2. **Offshore Clay**
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-offshore_mudmat_clay.jpg
+   :target: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_clay
    :width: 600px
 
-3. **Offshore Sand**: `Link <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_sand>`_
+3. **Offshore Sand**
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-offshore_mudmat_sand.jpg
+   :target: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_sand
    :width: 600px
+
 
 Design References
 ------------------
