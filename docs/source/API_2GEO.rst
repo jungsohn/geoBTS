@@ -148,11 +148,9 @@ A.7.14 - 15
 - cohesive::
 
         Pu * D = 3 * Su * D + SUW * z * D + J * Su * z        # eq.23
-                - but limited by eq.24) PuD = 9 * Su * D for z > zr
-                - zr = 6 * D / (SUW * D / Su + J)
-                - J ranging from 0.25 to 0.5
-
-        - Lateral soil resistance: p-y curve
+                # but limited by eq.24) PuD = 9 * Su * D for z > zr
+                # zr = 6 * D / (SUW * D / Su + J)
+                # J ranging from 0.25 to 0.5
 
 - cohessionless::
 
