@@ -15,3 +15,11 @@ For the official document, please refer to the DNV publications.
 
 5.5 Uplift resistance
 ------------------------
+
+
+7.1 On-bottom stability
+------------------------
+
+
+7.2 Free spanning pipelines
+------------------------
