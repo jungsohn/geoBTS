@@ -65,9 +65,7 @@ of partially embedded pipelines when subjected to external vertical loading (e.g
     Fa_deep_u = alpha * su_reconsolidated * np.pi * D
 
     # eq.5.4: Shallow axial resistance
-    Fa_shallow_u = (
-        alpha * su_bottom_recon * np.pi * D / 2
-        + 2 * su_backfill_recon * (H + D / 2)
+    Fa_shallow_u = (alpha * su_bottom_recon * np.pi * D / 2 + 2 * su_backfill_recon * (H + D / 2)
 
 
 
@@ -77,6 +75,9 @@ of partially embedded pipelines when subjected to external vertical loading (e.g
 
 5.5. Uplift resistance
 ....................
+
+
+
 
 ----
 
