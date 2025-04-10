@@ -43,19 +43,33 @@ of partially embedded pipelines when subjected to external vertical loading (e.g
 
 ----
 
-5.3 Axial
------------
+4.3. Axial PSI
+....................
 
-5.4 Lateral
-------------
+4.4. Lateral PSI
+....................
 
-5.5 Uplift resistance
-------------------------
 
+
+5. Buried and covered pipelines
+---------------------------------
+
+5.3. Axial PSI
+....................
+
+5.4. Lateral PSI
+....................
+
+5.5. Uplift resistance
+....................
+
+
+7. Special considerations
+---------------------
 
 7.1 On-bottom stability
-------------------------
+.........................
 
 
 7.2 Free spanning pipelines
-------------------------
+.........................
