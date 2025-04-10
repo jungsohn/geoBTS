@@ -792,3 +792,57 @@ Time to 50% recovery (`t₅₀`) can be estimated from `c_v` using the 1D consol
     print(f"t50 = {t50:.1f} s")
 
 This value of `t₅₀` can then be used in the time-hardening axial resistance model.
+
+
+6.10.2 Example: Axial Resistance Recovery During Cyclic Rest Periods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This example shows how the axial resistance recovers during rest periods between cyclic loading events.
+The recovery is governed by the time-hardening model using `t₅₀`, which itself depends on the
+soil’s consolidation coefficient (`c_v`).
+
+The figure below plots the normalized axial resistance over time for a range of rest periods.
+
+Python Code (no Streamlit required):
+::
+
+    import numpy as np
+    import matplotlib.pyplot as plt
+
+    def compute_t50_from_cv(cv, H):
+        """
+        Estimate t50 from coefficient of consolidation and drainage path.
+
+        Reference:
+        - Terzaghi 1D consolidation theory
+        """
+        return H**2 / (np.pi**2 * cv)
+
+    def compute_F_Ares_t(FA_u, FA_d, t, t50, n=1.0):
+        """
+        Time-dependent axial resistance recovery model.
+        """
+        return FA_d - (FA_d - FA_u) * np.exp(-np.log(2) * (t / t50)**n)
+
+    # Parameters
+    cv = 5e-8          # m²/s
+    H = 0.1            # m
+    FA_u = 0.2         # Initial (undrained) F/V
+    FA_d = 0.6         # Final (drained) F/V
+    n = 1.0            # Shape factor
+
+    t50 = compute_t50_from_cv(cv, H)
+
+    t_rest = np.linspace(0, 12 * 3600, 200)  # 0 to 12 hours in seconds
+    FA_rest = compute_F_Ares_t(FA_u, FA_d, t_rest, t50, n)
+
+    # Plotting
+    plt.figure(figsize=(6, 4))
+    plt.plot(t_rest / 3600, FA_rest, label="Recovered F/V")
+    plt.xlabel("Rest Time (hours)")
+    plt.ylabel("Normalized Axial Resistance (F/V)")
+    plt.title("Recovery of Axial Resistance During Rest Periods")
+    plt.grid(True)
+    plt.legend()
+    plt.tight_layout()
+    plt.show()
