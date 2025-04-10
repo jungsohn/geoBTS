@@ -1,4 +1,4 @@
-DNC CN 30.4
+DNV CN 30.4
 ============
 
 2. Axial Pile Resistance
