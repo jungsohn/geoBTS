@@ -43,8 +43,8 @@ Rs = λ * (Sm + 2 * Cm) * As
     Rs = lam * (Sm + 2 * Cm) * As
 
 Note:
-    Sm: mean effectiver overburden pressure
-    Cm: mean undrained shear strength
+   - Sm: mean effectiver overburden pressure
+   - Cm: mean undrained shear strength
 
 3. Lateral Pile Resistance
 ---------------------------
