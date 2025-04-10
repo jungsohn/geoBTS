@@ -72,13 +72,11 @@ of partially embedded pipelines when subjected to external vertical loading (e.g
 5.3. Axial PSI
 ....................
 
-- Undrained
 
 .. code-block:: python
-
+    # Undrained
     # eq.5.3: Deep axial resistance
     Fa_deep_u = alpha * su_reconsolidated * np.pi * D
-
     # eq.5.4: Shallow axial resistance
     Fa_shallow_u = (alpha * su_bottom_recon * np.pi * D / 2 + 2 * su_backfill_recon * (H + D / 2)
 
