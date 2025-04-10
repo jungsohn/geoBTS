@@ -11,7 +11,7 @@ for mudmat foundation design in geotechnical conditions.
 Interactive Web Apps
 =========================
 
-🔗 `1. Bearing Capacity <Bearing Capacity (Onshore)>`__
+🔗 `1. Bearing Capacity <_bearing)>`__
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-land_bearing_capacity.jpg
    :alt: Bearing Capacity App
