@@ -19,7 +19,6 @@ Interactive Web Apps
 
 🔗 `Open Web App <bearing_>`__
 
----
 
 **2. Offshore Mudmat on Clay**
 
@@ -29,7 +28,6 @@ Interactive Web Apps
 
 🔗 `Open Web App <clay_>`__
 
----
 
 **3. Offshore Mudmat on Sand**
 
@@ -39,7 +37,6 @@ Interactive Web Apps
 
 🔗 `Open Web App <sand_>`__
 
----
 
 Design References
 =========================
