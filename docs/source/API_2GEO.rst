@@ -31,36 +31,38 @@ For the official document, please refer to the American Petroleum Institute (API
     ic = 0.5 - 0.5*(1 - He/(Ae*Su))**0.5   # A.13
 
 
-
 7.5. Undrained: Linearly increasing Su
-............................
+......................................
 
-- eq.5) Qd = F * (Nc * Su0 + k * Be / 4) * Kc * Ae::
+- **eq.5**:  
+  Qd = F * (Nc * Su0 + k * Be / 4) * Kc * Ae
 
-        - Su0 = SuML + k * z
+.. code-block:: python
 
-        - A.17) def F_2geo(a, b, c, d, x):
-                    return a + b * x - ((c + b * x)**2 + d**2)**0.5
-                - x = k * Be / Su0
+    Su0 = SuML + k * z  # definition
 
-        - A.16) Kc = 1 + sc + dc - ic - bc - gc
-                - A.18) sc = scv * (1 - w*ic)*(Be/Le)
-                        - A.19) scv = 0.18 - 0.1155 * x**0.5 + 0.021 * x
+    def F_2geo(a, b, c, d, x):  # A.17
+        return a + b * x - ((c + b * x)**2 + d**2)**0.5
 
-                - A.20) dc = 0.3 * (SuAVE/Su2) * np.atan(D/Be)
-                        - Su2 = F * (Nc * Su0 + k * Beff / 4) / Nc
+    x = k * Be / Su0
 
-                - A21) ic = 0.5 - 0.5 * (1 - He / (Ae * Su0)) ** 0.5
-                - A.22) bc = 0.4 * v == 0
-                - A.23) gc = 0.4 * b == 0
+    Kc = 1 + sc + dc - ic - bc - gc                        # A.16
+    sc = scv * (1 - w*ic)*(Be/Le)                          # A.18
+    scv = 0.18 - 0.1155 * x**0.5 + 0.021 * x               # A.19
+    dc = 0.3 * (SuAVE/Su2) * np.atan(D/Be)                 # A.20
+    Su2 = F * (Nc * Su0 + k * Beff / 4) / Nc               # from A.20
+    ic = 0.5 - 0.5 * (1 - He / (Ae * Su0)) ** 0.5          # A.21
+    bc = 0.4 * v == 0                                      # A.22
+    gc = 0.4 * b == 0                                      # A.23
 
-        - A.1) dH = Kru * SuAVE * Ah::
-                - SuAVE = (SuML + Su0)
-                - Kru = from 2 to 4
+    dH = Kru * SuAVE * Ah                                  # A.1
+    SuAVE = (SuML + Su0)                                   # from A.1
+    Kru = 2 to 4                                           # A.1
 
-        - A.8) Le = L - 2*e1, Be = B - 2*e2::
-                - Le = Lx - 2*ex
-                - Be = By - 2*ey
+    Le = L - 2*e1                                          # A.8
+    Be = B - 2*e2                                          # A.8
+    Le = Lx - 2*ex                                         # A.8
+    Be = By - 2*ey                                         # A.8
 
 7.6. Drained
 ............................
