@@ -14,7 +14,7 @@ and is directly linked to problems such as buckling, walking, settlement, and fa
 PSI serves as the key interface between structural pipeline behavior and geotechnical soil response,  
 making it a shared concern between subsea engineers and offshore geotechnical engineers.
 
-Purpose:
+1.1 Purpose:
 
 This handbook provides a structured guide to understanding and applying
 pipe–soil interaction (PSI) concepts in offshore engineering. It focuses on
@@ -22,7 +22,7 @@ practical methods for estimating PSI resistance using analytical and empirical
 approaches, and helps engineers prepare input curves and assess design conditions
 before engaging in numerical modeling.
 
-Scope:
+2.1 Scope:
 
 The handbook covers:
 - Directional PSI behavior: vertical, lateral, axial
