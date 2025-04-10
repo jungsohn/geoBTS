@@ -81,6 +81,9 @@ of partially embedded pipelines when subjected to external vertical loading (e.g
 
 .. code-block:: python
 
+    # eq.7.1: Mean effective stress beneath the pipe span
+    sigma_s = 0.5 * (1 + K0) * B * gamma_prime + (V / (3 * B)) * (1 + L / (2 * Lsh))
+
     # eq.7.2: Vertical dynamic stiffness
     Kv_d = (Cv / (1 - nu)) * ((2/3) * (rho_s / rho) + 1/3) * D**0.5
 
