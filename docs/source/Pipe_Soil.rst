@@ -444,4 +444,67 @@ Using interface friction model:
     plot_psi_curve(z, V, "Displacement z [m]", "Vertical Resistance V [kN/m]", "Vertical V–z Curve")
 
 
+6. Advanced PSI Considerations
+===============================
+
+Note:
+This section extends the concepts introduced in Sections 2–5 to include advanced and field-calibrated
+behaviors observed in cyclic loading, stiffness changes, and pipeline-specific conditions. These are
+critical in real-world projects, especially in long-term performance, installation design, and risk assessment.
+
+6.1 Cyclic Axial Resistance
+----------------------------
+- Undrained to drained transition
+- Residual vs. peak friction (τ_max → τ_res)
+- Use in walking models (thermal and pressure cycling)
+- Factors: clay consolidation, cycle count, rate effects
+
+6.2 Cyclic Lateral Resistance
+------------------------------
+- Resistance degradation with repeated lateral movements
+- Application to thermal buckling, dynamic response
+- Recommended H_deg/H_peak ratios from DNVGL or tests
+
+6.3 Static Vertical Stiffness
+------------------------------
+- Definition: initial slope of V–z curve
+- Used in spring stiffness in global models
+- Empirical estimation from V_peak and z_peak
+
+6.4 Light vs. Heavy Pipe Behavior
+----------------------------------
+- **Light pipe**: on-bottom without self-embedment → low resistance
+- **Heavy pipe**: penetrates seabed due to weight → deeper embedment, higher resistance
+- Design implication: different p–y, V–z, T–u curves
+
+6.5 On-Bottom Stability
+------------------------
+- Purpose: prevent lateral sliding due to current, waves
+- Governed by axial and lateral friction
+- Stability checks based on DNVGL-RP-F109
+
+6.6 Free Spanning Conditions
+-----------------------------
+- Gaps under pipe due to seabed irregularities or scouring
+- Risks: vortex-induced vibrations (VIV), fatigue, local buckling
+- PSI influence: support loss → local stiffness change
+
+6.7 Pipeline Embedment
+-----------------------
+- Factors: pipe weight, soil strength, installation method (lay tension)
+- Influence on lateral and vertical resistance curves
+- Empirical prediction methods (DNVGL-RP-F114 Table A-3)
+
+6.8 Summary Table of Advanced Conditions
+----------------------------------------
+
++----------------------+-------------------------------------------+
+| Condition            | Affects                                   |
++----------------------+-------------------------------------------+
+| Cyclic axial loads   | T–u curve degradation (walking risk)     |
+| Cyclic lateral loads | H–y degradation (buckling, stability)    |
+| Pipe self-weight     | Embedment depth (affects all PSI curves) |
+| Seabed roughness     | Free spans, contact loss                 |
++----------------------+-------------------------------------------+
+
 
