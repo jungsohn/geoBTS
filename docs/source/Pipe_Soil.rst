@@ -313,7 +313,7 @@ Pipe–Soil Interaction (PSI) Handbook
 
 
 5. PSI Curve Construction using Analytical and Empirical Methods
-================================================================
+------------------------------------------------------------------
 
 Note:
 This section summarizes the empirical and analytical methods used to construct PSI curves
@@ -321,7 +321,7 @@ across all directions (vertical, lateral, axial). While some equations are intro
 this chapter provides a unified approach for curve generation before numerical modeling.
 
 5.1 Vertical Resistance Curve (V–z)
------------------------------------
+.....................................
 
 Based on undrained clay behavior (DNVGL-RP-F114):
 
@@ -355,7 +355,7 @@ Based on undrained clay behavior (DNVGL-RP-F114):
     z, V = generate_vertical_curve(5.0, 10, 0.6)
 
 5.2 Lateral Resistance Curve (H–y)
-----------------------------------
+.....................................
 
 Using empirical formulation:
 
@@ -388,7 +388,7 @@ Using empirical formulation:
     y, H = generate_lateral_curve(5.0, 6.0, 0.6)
 
 5.3 Axial Resistance Curve (T–u)
---------------------------------
+.....................................
 
 Using interface friction model:
 
@@ -421,7 +421,7 @@ Using interface friction model:
     u, T = generate_axial_curve(5.0, 1.5, 0.3)
 
 5.4 Visualizing All PSI Curves (Optional)
------------------------------------------
+.....................................
 
 ::
 
@@ -444,7 +444,7 @@ Using interface friction model:
 
 
 6. Advanced PSI Considerations
-===============================
+---------------------------------
 
 Note:
 This section extends the concepts introduced in Sections 2–5 to include advanced and field-calibrated
@@ -452,26 +452,26 @@ behaviors observed in cyclic loading, stiffness changes, and pipeline-specific c
 critical in real-world projects, especially in long-term performance, installation design, and risk assessment.
 
 6.1 Cyclic Axial Resistance
-----------------------------
+.....................................
 - Undrained to drained transition
 - Residual vs. peak friction (τ_max → τ_res)
 - Use in walking models (thermal and pressure cycling)
 - Factors: clay consolidation, cycle count, rate effects
 
 6.2 Cyclic Lateral Resistance
-------------------------------
+.....................................
 - Resistance degradation with repeated lateral movements
 - Application to thermal buckling, dynamic response
 - Recommended H_deg/H_peak ratios from DNVGL or tests
 
 6.3 Static Vertical Stiffness
-------------------------------
+.....................................
 - Definition: initial slope of V–z curve
 - Used in spring stiffness in global models
 - Empirical estimation from V_peak and z_peak
 
 6.4 Light vs. Heavy Pipe Behavior
-----------------------------------
+.....................................
 - **Light pipe**: on-bottom without self-embedment → low resistance
 - **Heavy pipe**: penetrates seabed due to weight → deeper embedment, higher resistance
 - Design implication: different p–y, V–z, T–u curves
@@ -518,7 +518,7 @@ Python-style Calculation:
 
 
 6.5 On-Bottom Stability
-------------------------
+.....................................
 - Purpose: prevent lateral sliding due to current, waves
 - Governed by axial and lateral friction
 - Stability checks based on DNVGL-RP-F109
@@ -565,19 +565,19 @@ Python-style Calculation:
 
 
 6.6 Free Spanning Conditions
------------------------------
+.....................................
 - Gaps under pipe due to seabed irregularities or scouring
 - Risks: vortex-induced vibrations (VIV), fatigue, local buckling
 - PSI influence: support loss → local stiffness change
 
 6.7 Pipeline Embedment
------------------------
+.....................................
 - Factors: pipe weight, soil strength, installation method (lay tension)
 - Influence on lateral and vertical resistance curves
 - Empirical prediction methods (DNVGL-RP-F114 Table A-3)
 
 6.7 Pipeline Embedment
-------------------------
+.....................................
 
 Reference:
 - DNVGL-RP-F114 Table A-3
@@ -623,7 +623,7 @@ Python-style Calculation:
 
 
 6.8 Summary Table of Advanced Conditions
-----------------------------------------
+...........................................
 
 +----------------------+-------------------------------------------+
 | Condition            | Affects                                   |
