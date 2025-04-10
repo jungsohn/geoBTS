@@ -15,20 +15,20 @@ Interactive Web Apps
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-land_bearing_capacity.jpg
    :alt: Bearing Capacity App
-   :width: 600
+   :width: 800
 
 🔗 `2. Offshore Mudmat on Clay <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_clay)>`__
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-offshore_mudmat_clay.jpg
    :alt: Offshore Clay App
-   :width: 600
+   :width: 800
 
 
 🔗 `3. Offshore Mudmat on Sand <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_sand)>`__
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-offshore_mudmat_sand.jpg
    :alt: Offshore Sand App
-   :width: 600
+   :width: 800
 
 
 Design References
