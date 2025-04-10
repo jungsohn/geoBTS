@@ -35,17 +35,21 @@ Design References
 =========================
 
 **Terzaghi (1943)**  
+
 - Strip footing on homogeneous soil  
 - ❗ No shape or embedment adjustment
 
 **Meyerhof (1951, 1963)**  
+
 - Extended Terzaghi with shape/depth factors  
 - Example: φ = 30° → Ng = 20 (Meyerhof), 15 (Terzaghi)
 
 **Vesic (1973)**  
+
 - 📌 To be updated soon
 
 **Hansen (1970)**  
+
 - 📌 To be updated soon
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/Grok_Terzaghi.png
