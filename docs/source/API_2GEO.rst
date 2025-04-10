@@ -64,6 +64,44 @@ For the official document, please refer to the American Petroleum Institute (API
     Le = Lx - 2*ex                                         # A.8
     Be = By - 2*ey                                         # A.8
 
+
+7.6. Drained
+.............
+
+- **eq.6**:  
+  Qd' = (Pe * (Nq - 1) * Kq + 0.5 * GAMe * Be * Ng * Kg) * Ae
+  Note: phi should be relevant to triaxial conditions (phi_TX), because the phi_PS is 10 % higher than phi_TX.
+
+.. code-block:: python
+
+    Nq = np.exp(np.pi * np.tan(np.radians(phi))) * np.tan(np.radians(45 + phi/2))  # from eq.6
+    Ng = 1.5 * (Nq - 1) * np.tan(np.radians(phi))                                   # from eq.6
+
+    Qo = 0.5 * GAMe * B * Ng * Ao    # eq.7
+    Qd = 0.3 * GAMe * B * Ng * A     # eq.8
+
+    Kq = iq * sq * dq * bq * gq      # A.24
+    Kg = ig * sg * dg * bg * gg      # A.24
+
+    iq = (1 - 0.5*(H/Q))**5          # A.25
+    ig = (1 - 0.7*(H/Q))**5          # A.25
+
+    sq = 1 + iq * (B/Le) * np.sin(np.radians(phi))       # A.26
+    sg = 1 - 0.4 * ig * (B/Le)                           # A.26
+
+    dq = 1 + 1.2 * (D/Be) * np.tan(np.radians(phi)) * (1 - np.sin(np.radians(phi)))**2  # A.27
+    dg = 1                                               # A.27
+
+    bq = np.exp(-2 * v * np.tan(np.radians(phi)))        # A.28
+    bg = np.exp(-2.7 * v * np.tan(np.radians(phi)))      # A.28
+
+    gq = (1 - 0.5 * np.tan(np.radians(b)))**5            # A.29
+    gg = gq                                              # A.29
+
+    dH = 0.5 * Krd * GAMe * Db * Ah                      # A.2
+    Krd = Kp - 1/Kp                                      # A.3
+    Kp = (np.tan(np.radians(45 + 0.5*phi)))**2           # A.4
+
 7.6. Drained
 ............................
 
@@ -71,7 +109,6 @@ For the official document, please refer to the American Petroleum Institute (API
 
         - Nq = np.exp(np.pi * np.tan(np.radians(phi)) )* np.tan(np.radians(45 + phi/2))
         - Ng = 1.5 * (Nq - 1) * np.tan(np.radians(phi))
-        - phi should be relevant to triaxial conditions (phi_TX), because the phi_PS is 10 % higher than phi_TX.
 
         - eq.7) Qo = 0.5 * GAMe * B * Ng * Ao
         - eq.8) Qd' = 0.3 * GAMe * B * Ng * A
