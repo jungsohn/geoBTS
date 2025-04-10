@@ -15,32 +15,22 @@ For the official document, please refer to the American Petroleum Institute (API
 --------------------
 
 7.4. Undrained: Constant Su
-.................
+............................
+
+- **eq.2**:  
+  Qd = Su * Nc * Kc * Ae
 
 .. code-block:: python
 
-    # eq.3
-    Qo = 5.14 * Su * Ao
+    Qo = 5.14 * Su * Ao  # eq.3
+    Qd = 6.05 * Su * A   # eq.4
 
-    # eq.4
-    Qd = 6.05 * Su * A
-
-    # A.10 - A.13
-    Kc = 1 + sc + dc - ic - bc - gc
-    sc = 0.18 * (1 - 2*ic)*(Be/Le)
-    dc = 0.3 * np.atan(D/Be)
-    ic = 0.5 - 0.5*(1 - He/(Ae*Su))**0.5
+    Kc = 1 + sc + dc - ic - bc - gc        # A.10
+    sc = 0.18 * (1 - 2*ic)*(Be/Le)         # A.11
+    dc = 0.3 * np.atan(D/Be)               # A.12
+    ic = 0.5 - 0.5*(1 - He/(Ae*Su))**0.5   # A.13
 
 
-- eq.2) Qd = Su * Nc * Kc * Ae::
-
-        - eq3) Qo = 5.14 * Su * Ao
-        - eq4) Qd = 6.05 * Su * A
-
-        - A.10) Kc = 1 + sc + dc - ic - bc - gc
-                - A.11) sc = 0.18 * (1 - 2*ic)*(Be/Le)
-                - A.12) dc = 0.3*np.atan(D/Be)
-                - A.13) ic = 0.5 - 0.5*(1 - He/(Ae*Su))**0.5
 
 7.5. Undrained: Linearly increasing Su
 ............................
