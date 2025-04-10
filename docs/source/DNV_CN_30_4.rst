@@ -1,25 +1,50 @@
-DNV CN 30.4
-============
+DNV CN 30.4 (1992)
+==================
+
+This document provides a user-friendly summary of selected formulas from DNV CN 30.4, focused on pile and gravity base foundation design.  
+It is intended for educational use only. Please refer to the official DNV publication for authoritative guidance.
+
+.. contents:: Table of Contents
+   :depth: 2
+   :local:
+
+----
 
 2. Axial Pile Resistance
 -------------------------
 
-- eq.2.2.2.1) R = Sum(fs * As) + qp * Ap
+- **eq.2.2.2.1**  
+  R = Σ(fs * As) + qp * Ap
 
-    - alpha method: fs = alpha * Cu::
+**Alpha method**  
 
-        - qp = 9 * Cu * Fc
-        - r: pile aspect ratio = L/D
+.. code-block:: python
 
-    - beta method: fs = K * beta * Po::
+    fs = alpha * Cu
+    qp = 9 * Cu * Fc
 
-        - beta = np.tan(np.radians(delta)) 
-        - K = 1 - np.sin(np.radians(phi))
+Note: r = pile aspect ratio = L/D
 
-    - lambda method: Rs = lambda * (Sm + 2 * Cm) * As::
+**Beta method**  
+fs = K * β * Po  
 
-        - Sm: mean effectiver overburden pressure
-        - Cm: mean undrained shear strength
+.. code-block:: python
+
+    beta = np.tan(np.radians(delta))
+    K = 1 - np.sin(np.radians(phi))
+    fs = K * beta * Po
+
+**Lambda method**  
+Rs = λ * (Sm + 2 * Cm) * As
+
+
+.. code-block:: python
+
+    Rs = lam * (Sm + 2 * Cm) * As
+
+Note:
+    Sm: mean effectiver overburden pressure
+    Cm: mean undrained shear strength
 
 3. Lateral Pile Resistance
 ---------------------------
