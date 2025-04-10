@@ -4,6 +4,11 @@ Geotech Maps
 This section introduces map-based geotechnical tools and visualizations,  
 including site data, offshore structure locations, and interactive spatial analysis.
 
+.. contents:: Table of Contents
+   :depth: 2
+   :local:
+
+
 Interactive Maps
 -----------------
 
