@@ -43,7 +43,7 @@ Pipe–Soil Interaction (PSI) Handbook
     - Use in global FE model: spring element definition
 
 2.5 Worked Example: Vertical Resistance in Soft Clay
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 **Problem Setup:**
 
