@@ -686,3 +686,59 @@ The following empirical model can be used to estimate residual axial force:
 
     FAres_over_V = compute_residual_axial_resistance(Su_res=3.0, sigma_n_eff=5.0, OCR=4.0)
     print(f"Normalized F_Ares/V = {FAres_over_V:.3f}")
+
+6.10 Time-Dependent Axial Resistance (Hardening Model)
+.......................................................
+
+- Consolidation-driven interface hardening model
+- Gradual increase from undrained to drained strength over time
+- Model suitable for walking analysis and clay seabeds
+
+
+Reference:
+- Randolph & White (2008)
+- DNVGL-RP-F114 Appendix B
+
+Python-style Calculation:
+
+::
+
+    import numpy as np
+
+    def compute_time_dependent_axial_resistance(FA_res_u, FA_res_d, t, t50, n):
+        """
+        Compute the normalized axial resistance as a function of time.
+
+        Parameters:
+        - FA_res_u : Initial undrained normalized axial resistance (F/V)
+        - FA_res_d : Final drained normalized axial resistance (F/V)
+        - t        : Time since installation [same unit as t50]
+        - t50      : Time to reach 50% strength gain
+        - n        : Shape parameter (typically 1–2)
+
+        Reference:
+        - Based on Randolph & White (2008), time-hardening interface model
+        """
+
+        exponent = -np.log(2) * (t / t50)**n
+        FA_res_t = FA_res_d - (FA_res_d - FA_res_u) * np.exp(exponent)
+        return FA_res_t
+
+# Example usage:
+
+    FA_res = compute_time_dependent_axial_resistance(
+        FA_res_u=0.2, FA_res_d=0.6, t=24, t50=12, n=1.5)
+    print(f"Normalized F_Ares(t)/V = {FA_res:.3f}")
+
+import matplotlib.pyplot as plt
+
+t = np.linspace(0, 48, 100)
+resistances = [compute_time_dependent_axial_resistance(0.2, 0.6, ti, 12, 1.5) for ti in t]
+
+plt.plot(t, resistances)
+plt.xlabel("Time (hours)")
+plt.ylabel("Normalized Axial Resistance (F/V)")
+plt.title("Time-dependent Resistance Hardening")
+plt.grid(True)
+plt.tight_layout()
+plt.show()
