@@ -7,9 +7,29 @@ Pipe–Soil Interaction (PSI) Handbook
 1. Introduction to PSI
 -----------------------
 
-- Engineering need for PSI in offshore pipeline design
-- Role in buckling, walking, settlement, and fatigue analysis
-- PSI as an interface between pipeline mechanics and seabed geomechanics
+Pipe–soil interaction (PSI) plays a critical role in offshore pipeline design and analysis.  
+It governs how the seabed soil reacts to the vertical, lateral, and axial movements of a pipeline,  
+and is directly linked to problems such as buckling, walking, settlement, and fatigue.
+
+PSI serves as the key interface between structural pipeline behavior and geotechnical soil response,  
+making it a shared concern between subsea engineers and offshore geotechnical engineers.
+
+Purpose:
+~~~~~~~~
+This handbook provides a structured guide to understanding and applying
+pipe–soil interaction (PSI) concepts in offshore engineering. It focuses on
+practical methods for estimating PSI resistance using analytical and empirical
+approaches, and helps engineers prepare input curves and assess design conditions
+before engaging in numerical modeling.
+
+Scope:
+~~~~~~
+The handbook covers:
+- Directional PSI behavior: vertical, lateral, axial
+- Construction of PSI resistance curves (V–z, H–y, T–u)
+- Advanced effects: cyclic degradation, stiffness variation, embedment
+- Simple Python-style calculations for real-world usage
+
 
 2. Vertical Resistance
 ----------------------
