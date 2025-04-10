@@ -42,6 +42,63 @@ Pipe–Soil Interaction (PSI) Handbook
     - Interpretation: embedment depth, bearing failure, support capacity
     - Use in global FE model: spring element definition
 
+2.5 Worked Example: Vertical Resistance in Soft Clay
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Problem Setup:**
+
+- Undrained shear strength: Su = 5.0  # [kPa]
+- Bearing capacity factor: Nc = 10
+- Pipe diameter: D = 0.6  # [m]
+- Pipe weight (submerged): W_prime = 6.0  # [kN/m]
+
+**Python-style Calculation:**
+
+::
+
+    Su = 5.0         # [kPa]
+    Nc = 10
+    D = 0.6          # [m]
+    W_prime = 6.0    # [kN/m]
+
+    # Step 1: Calculate ultimate bearing capacity
+    q_ult = Nc * Su               # [kPa]
+    q_ult_kNm = q_ult * D         # [kN/m]
+
+    # Step 2: Estimate embedment depth
+    z_ult = q_ult_kNm / W_prime
+
+    print(f"q_ult = {q_ult_kNm:.2f} kN/m")
+    print(f"Estimated embedment depth = {z_ult:.2f} m")
+
+**Result:**
+- Ultimate vertical resistance: 30.0 kN/m
+- Estimated embedment depth: 5.0 m
+
+**Graph (Load–Displacement Curve):**
+
+.. code-block:: python
+
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    z = np.linspace(0, 6, 100)  # displacement [m]
+    q_ult = 30.0  # [kN/m]
+    z_ult = 5.0
+
+    V = q_ult * (z / z_ult)  # linear up to z_ult
+    V[z > z_ult] = q_ult     # perfectly plastic after peak
+
+    plt.figure(figsize=(6,4))
+    plt.plot(z, V, label='V–z curve')
+    plt.xlabel("Embedment depth z [m]")
+    plt.ylabel("Vertical Resistance V [kN/m]")
+    plt.title("Vertical Load–Displacement Curve")
+    plt.grid(True)
+    plt.legend()
+    plt.tight_layout()
+    plt.show()
+
 3. Lateral Resistance
 ---------------------
 
