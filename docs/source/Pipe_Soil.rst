@@ -313,17 +313,135 @@ Pipe–Soil Interaction (PSI) Handbook
     plot_tu_curve(T_peak, u_peak)
 
 
+5. PSI Curve Construction using Analytical and Empirical Methods
+================================================================
 
-5. PSI Curve Implementation
----------------------------
+Note:
+This section summarizes the empirical and analytical methods used to construct PSI curves
+across all directions (vertical, lateral, axial). While some equations are introduced in earlier sections,
+this chapter provides a unified approach for curve generation before numerical modeling.
 
-5.1 Curve generation methods
-    - Empirical approach using DNVGL-RP-F114
-    - Laboratory testing (T-bar, CPT, box tests)
-    - Numerical simulation (2D/3D FE)
+5.1 Vertical Resistance Curve (V–z)
+-----------------------------------
 
-5.2 Curve formatting and application
-    - Input for FE software (ABAQUS/ORCAFLEX/PLAXIS)
-    - Tabular or functional format
-    - Guidelines for element assignment
+Based on undrained clay behavior (DNVGL-RP-F114):
+
+::
+
+    def generate_vertical_curve(Su, Nc, D, z_max=1.0, n_points=100):
+        """
+        Generate V–z curve for vertical pipe-soil interaction in clay.
+        Su      : Undrained shear strength [kPa]
+        Nc      : Bearing capacity factor (~10)
+        D       : Pipe diameter [m]
+        z_max   : Max displacement for curve [m]
+        """
+        import numpy as np
+
+        z = np.linspace(0, z_max, n_points)
+        q_ult = Nc * Su                     # [kPa]
+        V_peak = q_ult * D                  # [kN/m]
+        z_peak = 0.5 * z_max                # Assume peak occurs at 50%
+
+        V = np.minimum(V_peak, V_peak * (z / z_peak))  # bilinear
+        return z, V
+
+**Example parameters:**
+- Su = 5.0 kPa
+- Nc = 10
+- D = 0.6 m
+
+::
+
+    z, V = generate_vertical_curve(5.0, 10, 0.6)
+
+5.2 Lateral Resistance Curve (H–y)
+----------------------------------
+
+Using empirical formulation:
+
+::
+
+    def generate_lateral_curve(Su, Np, D, y_max=0.2, n_points=100):
+        """
+        Generate H–y (lateral resistance) curve for soft clay.
+        Su      : Undrained shear strength [kPa]
+        Np      : Lateral resistance factor (~5–10)
+        D       : Pipe diameter [m]
+        y_max   : Max lateral displacement [m]
+        """
+        import numpy as np
+
+        y = np.linspace(0, y_max, n_points)
+        H_peak = Np * Su * D                # [kN/m]
+        y_peak = 0.1 * D                    # empirical rule
+
+        H = np.minimum(H_peak, H_peak * (y / y_peak))
+        return y, H
+
+**Example parameters:**
+- Su = 5.0 kPa
+- Np = 6.0
+- D = 0.6 m
+
+::
+
+    y, H = generate_lateral_curve(5.0, 6.0, 0.6)
+
+5.3 Axial Resistance Curve (T–u)
+--------------------------------
+
+Using interface friction model:
+
+::
+
+    def generate_axial_curve(W_prime, suction, mu, u_max=0.1, n_points=100):
+        """
+        Generate T–u (axial resistance) curve.
+        W_prime : Submerged pipe weight [kN/m]
+        suction : Suction resistance [kN/m]
+        mu      : Friction factor (0.2–0.4 for clay)
+        u_max   : Max axial displacement [m]
+        """
+        import numpy as np
+
+        u = np.linspace(0, u_max, n_points)
+        T_peak = mu * (W_prime + suction)
+        u_peak = 0.05                       # [m] empirical
+
+        T = np.minimum(T_peak, T_peak * (u / u_peak))
+        return u, T
+
+**Example parameters:**
+- W' = 5.0 kN/m
+- suction = 1.5 kN/m
+- mu = 0.3
+
+::
+
+    u, T = generate_axial_curve(5.0, 1.5, 0.3)
+
+5.4 Visualizing All PSI Curves (Optional)
+-----------------------------------------
+
+::
+
+    import matplotlib.pyplot as plt
+
+    def plot_psi_curve(x, y, xlabel, ylabel, title):
+        plt.figure(figsize=(6, 4))
+        plt.plot(x, y, label=title)
+        plt.xlabel(xlabel)
+        plt.ylabel(ylabel)
+        plt.title(title)
+        plt.grid(True)
+        plt.legend()
+        plt.tight_layout()
+        plt.show()
+
+    # Example usage:
+    z, V = generate_vertical_curve(5.0, 10, 0.6)
+    plot_psi_curve(z, V, "Displacement z [m]", "Vertical Resistance V [kN/m]", "Vertical V–z Curve")
+
+
 
