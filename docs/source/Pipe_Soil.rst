@@ -652,3 +652,37 @@ Python-style Calculation:
 +----------------------+-------------------------------------------+
 
 
+6.9 Effect of Soil Consolidation
+---------------------------------
+
+Residual axial resistance is known to increase with overconsolidation of the clay seabed.  
+The following empirical model can be used to estimate residual axial force:
+
+::
+
+    def compute_residual_axial_resistance(Su_res, sigma_n_eff, OCR, zeta=1.0, m=0.5):
+        """
+        Calculate the normalized residual axial resistance considering soil consolidation.
+
+        References:
+        - Randolph & White (2008)
+        - DNVGL-RP-F114 Appendix B
+
+        Parameters:
+        - Su_res        : Residual interface shear strength [kPa]
+        - sigma_n_eff   : Initial effective normal stress [kPa]
+        - OCR           : Overconsolidation ratio (typically >1 for stiff clay)
+        - zeta, m       : Empirical coefficients
+
+        Returns:
+        - Normalized residual axial resistance F_Ares / V
+        """
+
+        ratio = Su_res / sigma_n_eff
+        normalized_resistance = zeta * (ratio) * (OCR ** m)
+        return normalized_resistance
+
+# Example usage:
+
+    FAres_over_V = compute_residual_axial_resistance(Su_res=3.0, sigma_n_eff=5.0, OCR=4.0)
+    print(f"Normalized F_Ares/V = {FAres_over_V:.3f}")
