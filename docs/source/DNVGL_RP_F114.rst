@@ -75,3 +75,14 @@ of partially embedded pipelines when subjected to external vertical loading (e.g
 
 7.2 Free spanning pipelines
 .........................
+
+- Soil Stiffness
+
+
+.. code-block:: python
+
+    # eq.7.2: Vertical dynamic stiffness
+    Kv_d = (Cv / (1 - nu)) * ((2/3) * (rho_s / rho) + 1/3) * D**0.5
+
+    # eq.7.3: Lateral dynamic stiffness
+    Kl_d = Cl * (1 + nu) * ((2/3) * (rho_s / rho) + 1/3) * D**0.5
