@@ -160,37 +160,31 @@ A.7.14 - 15
     f = beta * Po               # eq.21
     q = Nq * Po                 # eq.22
 
+
 8.4. Soil reaction
 ...................
 
-- Axial shear transfer: t-z curve
+- Axial shear transfer: t-z curve  
 - End bearing resistance: Q-z curve
 
 8.5. Lateral load
 ..................
 
-- cohesive::
+.. code-block:: python
 
-        Pu * D = 3 * Su * D + SUW * z * D + J * Su * z        # eq.23
-                # but limited by eq.24) PuD = 9 * Su * D for z > zr
-                # zr = 6 * D / (SUW * D / Su + J)
-                # J ranging from 0.25 to 0.5
+    # cohesive
+    Pu * D = 3 * Su * D + SUW * z * D + J * Su * z        # eq.23
+    PuD = 9 * Su * D  # for z > zr                        # eq.24
+    zr = 6 * D / (SUW * D / Su + J)                       # definition
+    # J ranges from 0.25 to 0.5
 
-- cohessionless::
-
-        Pus = (C1 * z + C2 * D) * SUW * z        # eq.26 Shallow
-                # C1 is determined by phi
-                # C2 is determined by phi
-
-        Pud = C3 * D * SUE * z                   # eq.27 Deep
-                # C3 is determined by phi
-
-        p = A * Pu * np.tanh( k*z / (A*Pu) * y )
-                # Lateral soil resistance: p-y curve 
+    # cohesionless
+    Pus = (C1 * z + C2 * D) * SUW * z     # eq.26 (shallow)
+    Pud = C3 * D * SUE * z                # eq.27 (deep)
+    p = A * Pu * np.tanh(k*z / (A*Pu) * y)  # p-y curve
 
 9. Soil-structure interaction
 ------------------------------
-
 
 9.2. Steel catenary risers (SCR)
 .................................
@@ -198,4 +192,6 @@ A.7.14 - 15
 9.3. Top tension riser
 .......................
 
-- eq.32) Gmax / SuDSS = 300 / (PI/100)
+.. code-block:: python
+
+    Gmax / SuDSS = 300 / (PI/100)  # eq.32
