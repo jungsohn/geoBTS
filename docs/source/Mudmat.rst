@@ -11,13 +11,12 @@ for mudmat foundation design in geotechnical conditions.
 Interactive Web Apps
 =========================
 
-**1. Bearing Capacity (Onshore)**
+🔗 `Open Web App <Bearing Capacity (Onshore)>`__
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-land_bearing_capacity.jpg
    :alt: Bearing Capacity App
    :width: 600
 
-🔗 `Open Web App <bearing_>`__
 
 
 **2. Offshore Mudmat on Clay**
