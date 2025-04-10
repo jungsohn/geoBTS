@@ -242,6 +242,78 @@ Pipe–Soil Interaction (PSI) Handbook
     - Mobilization length and accumulated walking
     - How to input in global model
 
+4.5 Worked Example: Axial Resistance in Soft Clay
+
+**Problem Setup:**
+
+- Submerged pipe weight: W_prime = 5.0  # [kN/m]
+- Suction resistance: suction = 1.5  # [kN/m]
+- Friction factor (μ): 0.3
+- Peak displacement (u_peak): 0.05  # [m]
+
+**Python-style Calculation:**
+
+::
+
+    def calculate_axial_resistance(W_prime, suction, mu, u_peak):
+        """
+        Calculate axial resistance and initial stiffness.
+        W_prime : Submerged weight of pipe [kN/m]
+        suction : Suction resistance from clay [kN/m]
+        mu      : Axial friction factor
+        u_peak  : Displacement at full mobilization [m]
+        """
+        T_peak = mu * (W_prime + suction)
+        k_t = T_peak / u_peak
+
+        print(f"Peak axial resistance T_peak = {T_peak:.2f} kN/m")
+        print(f"Initial axial stiffness k_t = {k_t:.2f} kN/m²")
+        return T_peak, k_t
+
+    # Example input
+    W_prime = 5.0      # [kN/m]
+    suction = 1.5      # [kN/m]
+    mu = 0.3
+    u_peak = 0.05      # [m]
+
+    T_peak, k_t = calculate_axial_resistance(W_prime, suction, mu, u_peak)
+
+**Result:**
+- Peak axial resistance: 1.95 kN/m
+- Initial axial stiffness: 39.00 kN/m²
+
+**Graph (Axial Load–Displacement Curve):**
+
+.. code-block:: python
+
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    def plot_tu_curve(T_peak, u_peak):
+        """
+        Plot T–u curve for axial resistance.
+        T_peak : Peak axial resistance [kN/m]
+        u_peak : Displacement at T_peak [m]
+        """
+        u = np.linspace(0, u_peak * 2, 100)
+        T = np.minimum(T_peak, (T_peak / u_peak) * u)
+
+        plt.figure(figsize=(6, 4))
+        plt.plot(u, T, label="T–u curve")
+        plt.axhline(T_peak, color='gray', linestyle='--', linewidth=0.8)
+        plt.xlabel("Axial displacement u [m]")
+        plt.ylabel("Axial resistance T [kN/m]")
+        plt.title("Axial Load–Displacement (T–u) Curve")
+        plt.grid(True)
+        plt.legend()
+        plt.tight_layout()
+        plt.show()
+
+    # Plot the curve
+    plot_tu_curve(T_peak, u_peak)
+
+
+
 5. PSI Curve Implementation
 ---------------------------
 
