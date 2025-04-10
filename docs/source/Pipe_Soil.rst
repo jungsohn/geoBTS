@@ -477,11 +477,93 @@ critical in real-world projects, especially in long-term performance, installati
 - **Heavy pipe**: penetrates seabed due to weight → deeper embedment, higher resistance
 - Design implication: different p–y, V–z, T–u curves
 
+Reference:
+- DNVGL-RP-F114 Appendix A
+- DNVGL-RP-F109 Sec. 3.4
+
+Python-style Calculation:
+
+::
+
+    def classify_pipe_behavior(W_prime, Su, D):
+        """
+        Classify pipeline as 'light' or 'heavy' based on normalized bearing pressure.
+
+        References:
+        - DNVGL-RP-F114 Appendix A
+        - DNVGL-RP-F109 Sec. 3.4
+
+        Parameters:
+        - W_prime : Submerged weight of pipe [kN/m]
+        - Su      : Undrained shear strength of seabed [kPa]
+        - D       : Pipe diameter [m]
+
+        Returns:
+        - Classification string: 'Light Pipe – likely on-bottom' or 'Heavy Pipe – likely embedded'
+        """
+
+        bearing_pressure = W_prime / D                # [kPa]
+        normalized_pressure = bearing_pressure / Su
+
+        print(f"Normalized bearing pressure = {normalized_pressure:.2f}")
+
+        if normalized_pressure < 2:
+            return "Light Pipe – likely on-bottom"
+        else:
+            return "Heavy Pipe – likely embedded"
+
+# Example usage:
+
+    behavior = classify_pipe_behavior(W_prime=5.0, Su=2.5, D=0.6)
+    print(behavior)
+
+
 6.5 On-Bottom Stability
 ------------------------
 - Purpose: prevent lateral sliding due to current, waves
 - Governed by axial and lateral friction
 - Stability checks based on DNVGL-RP-F109
+
+Reference:
+- DNVGL-RP-F109: On-bottom stability design
+- DNVGL-RP-F114: Axial friction estimation
+
+Python-style Calculation:
+
+::
+
+    def check_on_bottom_stability(W_prime, mu, hydrodynamic_force):
+        """
+        Check whether a pipeline remains stable on the seabed under lateral hydrodynamic loading.
+
+        References:
+        - DNVGL-RP-F109 Sec. 3.4
+        - DNVGL-RP-F114 Sec. 4.2
+
+        Parameters:
+        - W_prime           : Submerged weight of pipe [kN/m]
+        - mu                : Axial friction factor (typ. 0.2–0.6 for clay)
+        - hydrodynamic_force: Expected lateral or uplift load from waves/currents [kN/m]
+
+        Returns:
+        - Stability assessment: 'Stable' or 'Unstable – pipe may slide'
+        """
+
+        T_resist = mu * W_prime
+        print(f"Axial resistance = {T_resist:.2f} kN/m")
+        print(f"External hydrodynamic force = {hydrodynamic_force:.2f} kN/m")
+
+        if T_resist >= hydrodynamic_force:
+            return "Stable"
+        else:
+            return "Unstable – pipe may slide"
+
+# Example usage:
+
+    result = check_on_bottom_stability(W_prime=6.0, mu=0.4, hydrodynamic_force=2.0)
+    print(result)
+
+
 
 6.6 Free Spanning Conditions
 -----------------------------
@@ -494,6 +576,52 @@ critical in real-world projects, especially in long-term performance, installati
 - Factors: pipe weight, soil strength, installation method (lay tension)
 - Influence on lateral and vertical resistance curves
 - Empirical prediction methods (DNVGL-RP-F114 Table A-3)
+
+6.7 Pipeline Embedment
+------------------------
+
+Reference:
+- DNVGL-RP-F114 Table A-3
+- Empirical embedment estimation for soft clay
+
+Python-style Calculation:
+
+::
+
+    def estimate_embedment(W_prime, Su, D):
+        """
+        Estimate pipeline embedment depth based on normalized pressure using empirical method.
+
+        Reference:
+        - DNVGL-RP-F114 Table A-3 (embedment depth based on W'/Su ratio)
+
+        Parameters:
+        - W_prime : Submerged weight of pipe [kN/m]
+        - Su      : Undrained shear strength [kPa]
+        - D       : Pipe diameter [m]
+
+        Returns:
+        - Estimated embedment depth [m]
+        """
+
+        normalized_pressure = (W_prime / D) / Su  # Dimensionless
+
+        if normalized_pressure < 2:
+            embedment = 0.05 * D
+        elif normalized_pressure < 5:
+            embedment = 0.1 * D
+        else:
+            embedment = 0.2 * D
+
+        print(f"Normalized pressure = {normalized_pressure:.2f}")
+        print(f"Estimated embedment depth = {embedment:.3f} m")
+        return embedment
+
+# Example usage:
+
+    z = estimate_embedment(W_prime=6.0, Su=5.0, D=0.6)
+    print(f"Embedment depth = {z:.3f} m")
+
 
 6.8 Summary Table of Advanced Conditions
 ----------------------------------------
