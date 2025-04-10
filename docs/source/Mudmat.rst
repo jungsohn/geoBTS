@@ -11,7 +11,7 @@ for mudmat foundation design in geotechnical conditions.
 Interactive Web Apps
 =========================
 
-🔗 `1. Bearing Capacity <_bearing)>`__
+🔗 `1. Bearing Capacity <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/land_bearing_capacity  )>`__
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-land_bearing_capacity.jpg
    :alt: Bearing Capacity App
@@ -58,6 +58,6 @@ Design References
    :alt: geoBTS Terzaghi Illustration
    :width: 800
 
-.. _bearing: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/land_bearing_capacity  
+.. _bearing: 
 .. _clay: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_clay  
 .. _sand: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_sand
