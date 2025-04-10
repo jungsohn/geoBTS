@@ -22,16 +22,11 @@ of partially embedded pipelines when subjected to external vertical loading (e.g
 
 # Total vertical resistance of embedded pipeline
 
-- **eq.4.1**:  
-
-  \( Q_v = Q_{v0} \cdot (1 + d_{ca}) + \gamma' \cdot A_{bm} \)
-
 .. code-block:: python
 
     Qv = Qv0 * (1 + d_ca) + gamma_prime * Abm     # (eq.4.1)
 
-- **eq.4.2**:  # Initial vertical bearing resistance
-  \( Q_{v0} = F \cdot \left( N_c \cdot s_{u,0} + \rho \cdot \frac{B}{4} \right) \cdot B \)
+# Initial vertical bearing resistance
 
 .. code-block:: python
 
