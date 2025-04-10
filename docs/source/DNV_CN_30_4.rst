@@ -47,6 +47,8 @@ Note:
    - Sm: mean effectiver overburden pressure
    - Cm: mean undrained shear strength
 
+----
+
 3. Lateral Pile Resistance
 ---------------------------
 
