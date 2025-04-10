@@ -76,6 +76,7 @@ Note:
 
     P = A * Pu * np.tanh(k * X / (A * Pu) * y)
 
+----
 
 4. Stability of Gravity Base Foundations
 -----------------------------------------
