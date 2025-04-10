@@ -83,6 +83,25 @@ of partially embedded pipelines when subjected to external vertical loading (e.g
     # eq.4.22: Normalized lateral break-out force in undrained soil
     FL_brk_u = su * D * (1.7 * (z / D)**0.61 + 0.23 * (V / (su * D))**0.83 + 0.6 * (gamma_prime * D / su) * (z / D)**2    )
 
+- Drained
+
+.. code-block:: python
+
+    # eq.4.23: Total drained lateral break-out force
+    FL_brk_d = FL_brk_d_fric + FL_brk_d_passive
+
+    # eq.4.24: Passive resistance component
+    FL_brk_d_passive = 0.5 * Kp * gamma_prime * z**2
+
+    # eq.4.25: For r > 0
+    N = (1 + np.sin(phi)) / (1 - np.sin(phi))
+    f_omega = (1 - np.sqrt(1 - r**2)) / r
+    omega = np.arctan(f_omega * np.tan(np.pi/4 + phi/2))
+    Kp = ((1 + f_omega * z / omega) * N / (1 + f_omega * z / N)) * np.exp(2 * omega * np.tan(phi))
+
+    # eq.4.26: For r < 0
+    Kp = 1 / ((1 + np.tan(phi)**2) * np.tan(phi) * np.sqrt(1 + r))
+
 
 
 ----
