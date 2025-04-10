@@ -742,3 +742,53 @@ plt.title("Time-dependent Resistance Hardening")
 plt.grid(True)
 plt.tight_layout()
 plt.show()
+
+
+6.10.1 Estimating t₅₀ from Consolidation Coefficient
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Why is `c_v` used in cyclic axial resistance models?
+
+**(KR)**  
+파이프가 축 방향으로 반복해서 앞뒤로 움직이는 경우(예: 열팽창, 수축),  
+점토 지반과의 인터페이스 전단 저항력이 매 싸이클 후 약해지고,  
+싸이클 사이의 시간 동안에는 흙이 점차 배수(consolidation)되면서  
+저항력이 회복되는 현상이 발생한다.
+
+이때 그 회복 속도를 지배하는 핵심 파라미터가 바로 **압밀 계수 `c_v`** 이다.  
+즉, `c_v` 값이 클수록 흙의 배수 속도가 빠르고, 파이프가 더 빨리 저항력을 회복한다.
+
+**(EN)**  
+In cyclic axial loading scenarios (e.g., thermal expansion/contraction),  
+the interface shear resistance between pipeline and seabed degrades during loading  
+but gradually recovers during the rest periods between cycles due to consolidation of the clay.  
+
+The rate of this recovery is governed by the **coefficient of consolidation `c_v`**,  
+which controls how fast excess pore pressure dissipates.  
+Higher `c_v` means faster recovery of axial resistance.
+
+---
+
+Time to 50% recovery (`t₅₀`) can be estimated from `c_v` using the 1D consolidation equation:
+
+::
+
+    def compute_t50_from_cv(cv, H):
+        """
+        Estimate t50 from coefficient of consolidation and drainage length.
+
+        Reference:
+        - Terzaghi 1D consolidation theory
+        - DNVGL-RP-F114 Appendix B
+        """
+        import numpy as np
+        return H**2 / (np.pi**2 * cv)
+
+# Example usage:
+
+    cv = 5e-8  # m²/s
+    H = 0.1    # m
+    t50 = compute_t50_from_cv(cv, H)
+    print(f"t50 = {t50:.1f} s")
+
+This value of `t₅₀` can then be used in the time-hardening axial resistance model.
