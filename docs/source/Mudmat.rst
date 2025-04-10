@@ -9,7 +9,7 @@ for mudmat foundation design in geotechnical conditions.
    :local:
 
 Interactive Web Apps
-=========================
+---------------------
 
 🔗 `1. Bearing Capacity <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/land_bearing_capacity>`__
 
@@ -32,7 +32,7 @@ Interactive Web Apps
 
 
 Design References
-=========================
+-------------------
 
 **Terzaghi (1943)**  
 
