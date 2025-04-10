@@ -179,8 +179,8 @@ A.7.14 - 15
     # J ranges from 0.25 to 0.5
 
     # cohesionless
-    Pus = (C1 * z + C2 * D) * SUW * z     # eq.26 (shallow)
-    Pud = C3 * D * SUE * z                # eq.27 (deep)
+    Pus = (C1 * z + C2 * D) * SUW * z       # eq.26 (shallow)
+    Pud = C3 * D * SUE * z                  # eq.27 (deep)
     p = A * Pu * np.tanh(k*z / (A*Pu) * y)  # p-y curve
 
 9. Soil-structure interaction
