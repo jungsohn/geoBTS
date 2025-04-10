@@ -99,8 +99,6 @@ Note:
 
     qu = 0.5 * SUW * Be * Ng * sg * dg * ig + (Po + a) * Nq * sq * dq * iq
 
----
-
 - **eq.4.4.4.1**  
   qu = F * (5.14 * Su0 + k * Be / 4) * (1 + sc + dc - ic)
 
