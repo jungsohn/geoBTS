@@ -44,32 +44,40 @@ Pipe–Soil Interaction (PSI) Handbook
 
 2.5 Worked Example: Vertical Resistance in Soft Clay
 
-
 **Problem Setup:**
 
 - Undrained shear strength: Su = 5.0  # [kPa]
 - Bearing capacity factor: Nc = 10
 - Pipe diameter: D = 0.6  # [m]
-- Pipe weight (submerged): W_prime = 6.0  # [kN/m]
+- Submerged pipe weight: W_prime = 6.0  # [kN/m]
 
 **Python-style Calculation:**
 
 ::
 
+    def calculate_vertical_resistance(Su, Nc, D, W_prime):
+        """
+        Calculate ultimate vertical resistance and estimated embedment depth.
+        Su        : Undrained shear strength [kPa]
+        Nc        : Bearing capacity factor (typically 10 for clay)
+        D         : Pipe diameter [m]
+        W_prime   : Submerged pipe weight [kN/m]
+        """
+        q_ult_kPa = Nc * Su
+        q_ult_kNm = q_ult_kPa * D  # Convert to kN/m
+        z_ult = q_ult_kNm / W_prime  # Estimated embedment depth
+
+        print(f"Ultimate vertical resistance q_ult = {q_ult_kNm:.2f} kN/m")
+        print(f"Estimated embedment depth z_ult = {z_ult:.2f} m")
+        return q_ult_kNm, z_ult
+
+    # Example input
     Su = 5.0         # [kPa]
     Nc = 10
     D = 0.6          # [m]
     W_prime = 6.0    # [kN/m]
 
-    # Step 1: Calculate ultimate bearing capacity
-    q_ult = Nc * Su               # [kPa]
-    q_ult_kNm = q_ult * D         # [kN/m]
-
-    # Step 2: Estimate embedment depth
-    z_ult = q_ult_kNm / W_prime
-
-    print(f"q_ult = {q_ult_kNm:.2f} kN/m")
-    print(f"Estimated embedment depth = {z_ult:.2f} m")
+    q_ult, z_ult = calculate_vertical_resistance(Su, Nc, D, W_prime)
 
 **Result:**
 - Ultimate vertical resistance: 30.0 kN/m
@@ -82,22 +90,30 @@ Pipe–Soil Interaction (PSI) Handbook
     import matplotlib.pyplot as plt
     import numpy as np
 
-    z = np.linspace(0, 6, 100)  # displacement [m]
-    q_ult = 30.0  # [kN/m]
-    z_ult = 5.0
+    def plot_vz_curve(q_ult, z_ult):
+        """
+        Plot V–z curve for vertical resistance.
+        q_ult : Ultimate vertical resistance [kN/m]
+        z_ult : Displacement at full mobilization [m]
+        """
+        z = np.linspace(0, z_ult * 1.5, 100)
+        V = np.minimum(q_ult, q_ult * (z / z_ult))
 
-    V = q_ult * (z / z_ult)  # linear up to z_ult
-    V[z > z_ult] = q_ult     # perfectly plastic after peak
+        plt.figure(figsize=(6, 4))
+        plt.plot(z, V, label="V–z curve")
+        plt.axhline(q_ult, color='gray', linestyle='--', linewidth=0.8)
+        plt.xlabel("Embedment depth z [m]")
+        plt.ylabel("Vertical Resistance V [kN/m]")
+        plt.title("Vertical Load–Displacement Curve")
+        plt.grid(True)
+        plt.legend()
+        plt.tight_layout()
+        plt.show()
 
-    plt.figure(figsize=(6,4))
-    plt.plot(z, V, label='V–z curve')
-    plt.xlabel("Embedment depth z [m]")
-    plt.ylabel("Vertical Resistance V [kN/m]")
-    plt.title("Vertical Load–Displacement Curve")
-    plt.grid(True)
-    plt.legend()
-    plt.tight_layout()
-    plt.show()
+    # Plot the curve
+    plot_vz_curve(q_ult, z_ult)
+
+
 
 3. Lateral Resistance
 ---------------------
