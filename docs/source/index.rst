@@ -6,7 +6,7 @@
 Web App Library for Geotechnical Engineers
 =========================================================
 
-**"Best Practices in Texas" developed by Dr. Sohn**
+**B**est Practices in **T**exas developed by Dr. **S**ohn
 
 Welcome to **geoBTS**, an open-source platform offering practical tools and documentation  
 for geotechnical engineers, researchers, and students. This site provides access to web-based applications for geotechnical design and analysis.  
