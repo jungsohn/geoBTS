@@ -79,6 +79,10 @@ of partially embedded pipelines when subjected to external vertical loading (e.g
 
 - Model 2
 
+.. code-block:: python
+
+    # eq.4.22: Normalized lateral break-out force in undrained soil
+    FL_brk_u = su * D * (1.7 * (z / D)**0.61 + 0.23 * (V / (su * D))**0.83 + 0.6 * (gamma_prime * D / su) * (z / D)**2    )
 
 
 
