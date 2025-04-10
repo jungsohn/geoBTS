@@ -576,9 +576,6 @@ Python-style Calculation:
 - Influence on lateral and vertical resistance curves
 - Empirical prediction methods (DNVGL-RP-F114 Table A-3)
 
-6.7 Pipeline Embedment
-.....................................
-
 Reference:
 - DNVGL-RP-F114 Table A-3
 - Empirical embedment estimation for soft clay
