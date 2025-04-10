@@ -69,15 +69,14 @@ of partially embedded pipelines when subjected to external vertical loading (e.g
 4.4. Lateral PSI
 ....................
 
-- Model 1
+- Undrained Model 1
 
 .. code-block:: python
 
-   # Undrained
    FL_brk_u_remain = z * (ka * su_active + kp * su_passive) * gamma_rate # eq.4.21 (allowing for suction at rear)
    FL_brk_u_remain = z * (ka * su_active + 0.5 * gamma_prime * z) * gamma_rate # eq.4.21 (not allowing for suction at rear)
 
-- Model 2
+- Undrained Model 2
 
 .. code-block:: python
 
