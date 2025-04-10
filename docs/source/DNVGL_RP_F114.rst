@@ -65,7 +65,8 @@ of partially embedded pipelines when subjected to external vertical loading (e.g
 
 
 7. Special considerations
----------------------
+----------------------------
+
 
 7.1 On-bottom stability
 .........................
