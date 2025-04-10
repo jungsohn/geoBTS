@@ -17,6 +17,20 @@ For the official document, please refer to the American Petroleum Institute (API
 7.4. Undrained: Constant Su
 .................
 
+.. code-block:: python
+
+    # eq.3
+    Qo = 5.14 * Su * Ao
+
+    # eq.4
+    Qd = 6.05 * Su * A
+
+    # A.10 - A.13
+    Kc = 1 + sc + dc - ic - bc - gc
+    sc = 0.18 * (1 - 2*ic)*(Be/Le)
+    dc = 0.3 * np.atan(D/Be)
+    ic = 0.5 - 0.5*(1 - He/(Ae*Su))**0.5
+
 
 - eq.2) Qd = Su * Nc * Kc * Ae::
 
