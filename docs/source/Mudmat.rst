@@ -2,7 +2,7 @@ Mudmat
 ===================
 
 This section introduces interactive tools and theoretical references  
-for mudmat foundation design in both onshore and offshore geotechnical conditions.
+for mudmat foundation design in geotechnical conditions.
 
 .. contents:: Table of Contents
    :depth: 2
