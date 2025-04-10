@@ -2,7 +2,7 @@ Pipe–Soil Interaction (PSI) Handbook
 ====================================
 
 .. contents::
-   :depth: 2
+   :depth: 3
 
 1. Introduction to PSI
 -----------------------
