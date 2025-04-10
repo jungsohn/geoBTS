@@ -145,6 +145,78 @@ Pipe–Soil Interaction (PSI) Handbook
     - Use in lateral buckling analysis
     - Application in ORCAFLEX/ABAQUS: spring or nonlinear link element
 
+3.5 Worked Example: Lateral Resistance in Soft Clay
+
+**Problem Setup:**
+
+- Undrained shear strength: Su = 5.0  # [kPa]
+- Lateral resistance factor: Np = 5.0
+- Pipe diameter: D = 0.6  # [m]
+- Peak displacement (y_peak): 0.1  # [m]
+
+**Python-style Calculation:**
+
+::
+
+    def calculate_lateral_resistance(Su, Np, D, y_peak):
+        """
+        Calculate peak lateral resistance and initial stiffness.
+        Su      : Undrained shear strength [kPa]
+        Np      : Lateral bearing capacity factor
+        D       : Pipe diameter [m]
+        y_peak  : Displacement at peak resistance [m]
+        """
+        H_peak = Np * Su * D  # Peak lateral resistance [kN/m]
+        k_h = H_peak / y_peak  # Initial stiffness [kN/m²]
+
+        print(f"Peak lateral resistance H_peak = {H_peak:.2f} kN/m")
+        print(f"Initial lateral stiffness k_h = {k_h:.2f} kN/m²")
+        return H_peak, k_h
+
+    # Example input
+    Su = 5.0         # [kPa]
+    Np = 5.0
+    D = 0.6          # [m]
+    y_peak = 0.1     # [m]
+
+    H_peak, k_h = calculate_lateral_resistance(Su, Np, D, y_peak)
+
+**Result:**
+- Peak lateral resistance: 15.0 kN/m
+- Initial stiffness: 150.0 kN/m²
+
+**Graph (Lateral Load–Displacement Curve):**
+
+.. code-block:: python
+
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    def plot_py_curve(H_peak, y_peak):
+        """
+        Plot p–y curve for lateral resistance.
+        H_peak : Peak lateral resistance [kN/m]
+        y_peak : Displacement at H_peak [m]
+        """
+        y = np.linspace(0, y_peak * 2, 100)
+        H = np.minimum(H_peak, (H_peak / y_peak) * y)
+
+        plt.figure(figsize=(6, 4))
+        plt.plot(y, H, label="p–y curve")
+        plt.axhline(H_peak, color='gray', linestyle='--', linewidth=0.8)
+        plt.xlabel("Lateral displacement y [m]")
+        plt.ylabel("Lateral resistance H [kN/m]")
+        plt.title("Lateral Load–Displacement (p–y) Curve")
+        plt.grid(True)
+        plt.legend()
+        plt.tight_layout()
+        plt.show()
+
+    # Plot the curve
+    plot_py_curve(H_peak, y_peak)
+
+
+
 4. Axial Resistance
 -------------------
 
