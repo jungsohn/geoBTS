@@ -23,7 +23,8 @@ It is intended for educational use only. Please refer to the official DNV public
     fs = alpha * Cu
     qp = 9 * Cu * Fc
 
-Note: r = pile aspect ratio = L/D
+Note: 
+   - r = pile aspect ratio = L/D
 
 **Beta method**  
 fs = K * β * Po  
