@@ -58,8 +58,12 @@ of partially embedded pipelines when subjected to external vertical loading (e.g
 
 - Axial residual resistance
 
+.. code-block:: python
+   # Undrained
+    mu_A_res_u = epsilon_res * alpha * (su / sigma_v_eff_NC) * gamma_pre**m * zeta * gamma_rate  # eq.4.17
 
-
+   # Drained 
+    mu_A_res_d = np.tan(delta_res) * r_pipe_soil * np.tan(phi_res) * zeta      
 
 4.4. Lateral PSI
 ....................
