@@ -653,7 +653,7 @@ Python-style Calculation:
 
 
 6.9 Effect of Soil Consolidation
----------------------------------
+.................................
 
 Residual axial resistance is known to increase with overconsolidation of the clay seabed.  
 The following empirical model can be used to estimate residual axial force:
