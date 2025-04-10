@@ -22,9 +22,10 @@ of partially embedded pipelines when subjected to external vertical loading (e.g
 
 - Undrained: Model 1
 .. code-block:: python
-
-    Qv = Qv0 * (1 + d_ca) + gamma_prime * Abm  # Total vertical resistance of embedded pipeline (eq.4.1)
-    Qv0 = F * (Nc * su0 + rho * B / 4) * B     # Initial vertical bearing resistance (eq.4.2)
+    # Total vertical resistance of embedded pipeline (eq.4.1)
+    Qv = Qv0 * (1 + d_ca) + gamma_prime * Abm  
+    # Initial vertical bearing resistance (eq.4.2)
+    Qv0 = F * (Nc * su0 + rho * B / 4) * B     
 
 - Undrained: Model 2
 .. code-block:: python
