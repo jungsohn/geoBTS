@@ -18,11 +18,13 @@ for geotechnical engineers, researchers, and students. This site provides access
 .. toctree::
    :maxdepth: 2
 
+   API_2GEO
+   DNVGL_F114
+   DNV_CN_30_4
+
    Mudmat
-   Suction_Pile
 
    Geotech_Map
-   API_2GEO
 
 ----
 
