@@ -11,30 +11,24 @@ for mudmat foundation design in geotechnical conditions.
 Interactive Web Apps
 =========================
 
-🔗 `1. Bearing Capacity <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/land_bearing_capacity  )>`__
+🔗 `1. Bearing Capacity <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/land_bearing_capacity)>`__
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-land_bearing_capacity.jpg
    :alt: Bearing Capacity App
    :width: 600
 
-
-
-**2. Offshore Mudmat on Clay**
+🔗 `2. Offshore Mudmat on Clay <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_clay)>`__
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-offshore_mudmat_clay.jpg
    :alt: Offshore Clay App
    :width: 600
 
-🔗 `Open Web App <clay_>`__
 
-
-**3. Offshore Mudmat on Sand**
+🔗 `3. Offshore Mudmat on Sand <https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_sand)>`__
 
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/geoBTS-offshore_mudmat_sand.jpg
    :alt: Offshore Sand App
    :width: 600
-
-🔗 `Open Web App <sand_>`__
 
 
 Design References
@@ -57,7 +51,3 @@ Design References
 .. image:: https://raw.githubusercontent.com/jungsohn/geoBTS/main/docs/images/Grok_Terzaghi.png
    :alt: geoBTS Terzaghi Illustration
    :width: 800
-
-.. _bearing: 
-.. _clay: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_clay  
-.. _sand: https://webapp-mudmat-7f78b3e2018b.herokuapp.com/offshore_mudmat_sand
