@@ -49,7 +49,7 @@ of partially embedded pipelines when subjected to external vertical loading (e.g
 4.4. Lateral PSI
 ....................
 
-
+----
 
 5. Buried and covered pipelines
 ---------------------------------
@@ -63,6 +63,7 @@ of partially embedded pipelines when subjected to external vertical loading (e.g
 5.5. Uplift resistance
 ....................
 
+----
 
 7. Special considerations
 ----------------------------
