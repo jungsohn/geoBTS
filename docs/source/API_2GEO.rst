@@ -122,11 +122,13 @@ For the official document, please refer to the American Petroleum Institute (API
     Hd = Suo * A                        # eq.14
     Hd_ = Q * np.tan(np.radians(phi))  # eq.15
 
-A.7.12 Skirts
-............................
 
-- Penetration: A.30) Qr = Qf + Qp = f * As + q * Ap
-- Removal: N/A
+A.7.12 Skirts
+.............
+
+.. code-block:: python
+
+    Qr = Qf + Qp = f * As + q * Ap  # A.30
 
 A.7.14 - 15
 ............
@@ -136,26 +138,27 @@ A.7.14 - 15
 - Torsional: N/A 
 
 
+
 8. Pile Foundation
---------------------
+-------------------
 
 8.1. Axial compression
-........................
+.......................
 
-- eq.16) Qc = f * As + q * Ap
+.. code-block:: python
 
-- cohesive::
+    Qc = f * As + q * Ap  # eq.16
 
-        f = alpha * su    # eq.17
-                alpha = 0.5 * psi**-0.5 # for psi<1
-                alpha = 0.5 * psi**-0.25 # for psi>1
-                psi = Su / Po
-        q = 9 * Su        # eq.20
+    # cohesive
+    f = alpha * su              # eq.17
+    alpha = 0.5 * psi**-0.5     # for psi < 1
+    alpha = 0.5 * psi**-0.25    # for psi > 1
+    psi = Su / Po               # definition
+    q = 9 * Su                  # eq.20
 
-- cohesionless::
-
-        f = beta * Po       # eq.21
-        q = Nq * Po         # eq.22
+    # cohesionless
+    f = beta * Po               # eq.21
+    q = Nq * Po                 # eq.22
 
 8.4. Soil reaction
 ...................
