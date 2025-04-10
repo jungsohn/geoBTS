@@ -49,11 +49,12 @@ of partially embedded pipelines when subjected to external vertical loading (e.g
 - Axial breakout resistance
 
 .. code-block:: python
+
    # Undrained
-    mu_A_brk_u = alpha * (su / sigma_v_eff_NC) * gamma_pre**m * zeta * gamma_rate  # eq.4.15
+   mu_A_brk_u = alpha * (su / sigma_v_eff_NC) * gamma_pre**m * zeta * gamma_rate  # eq.4.15
 
    # Drained 
-    mu_A_brk_d = np.tan(delta_peak) * r_pipe_soil * np.tan(phi_peak) * zeta       # eq.4.16
+   mu_A_brk_d = np.tan(delta_peak) * r_pipe_soil * np.tan(phi_peak) * zeta       # eq.4.16
 
 - Axial residual resistance
 
