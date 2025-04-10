@@ -20,7 +20,9 @@ Refer to the official DNV publications for complete and authoritative guidelines
 This section provides empirical and analytical formulas to evaluate the vertical resistance  
 of partially embedded pipelines when subjected to external vertical loading (e.g., from dragging anchors).
 
-- **eq.4.1**:  # Total vertical resistance of embedded pipeline
+# Total vertical resistance of embedded pipeline
+
+- **eq.4.1**:  
 
   \( Q_v = Q_{v0} \cdot (1 + d_{ca}) + \gamma' \cdot A_{bm} \)
 
