@@ -76,8 +76,9 @@ Note:
 
 .. code-block:: python
 
-    Nq
-    Ng
+    Nq = np.exp( np.pi * np.tan(np.radian(phi)) ) * (np.tan(np.radian(45 + phi/2)) )**2
+    Ng = 1.5 * (Nq - 1) * np.tan(np.radian(phi))   # Hansen
+    Ng = 2 * (Nq + 1 ) * np.tan(np.radian(phi))    # ?
 
     a = c / np.tan(np.radians(phi))
     iq = (1 - 0.5 * Fh / (Fv + 1e-9))**5
