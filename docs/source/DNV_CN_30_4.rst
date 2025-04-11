@@ -60,12 +60,9 @@ Note:
 3.3 Cohesionless soils
 .......................
 
-- **eq.3.3.2.1**  
-  P = A * Pu * tanh(k * X / (A * Pu) * y)
-
 .. code-block:: python
 
-    P = A * Pu * np.tanh(k * X / (A * Pu) * y)
+    P = A * Pu * np.tanh(k * X / (A * Pu) * y)   # eq.3.3.2.1
 
 ----
 
@@ -75,10 +72,7 @@ Note:
 4.4 Bearing capacity formulae
 ..............................
 
-- **eq.4.4.2.1**  
-  qu = 0.5 * SUW * Be * Ng * sg * dg * ig + (Po + a) * Nq * sq * dq * iq  
-  where  
-  a = c * cot(φ)
+- Drained
 
 .. code-block:: python
 
@@ -88,10 +82,9 @@ Note:
     sq = 1 + iq * Be / L * np.sin(np.radians(phi))
     sg = 1 - 0.4 * ig * Be / L
 
-    qu = 0.5 * SUW * Be * Ng * sg * dg * ig + (Po + a) * Nq * sq * dq * iq
+    qu = 0.5 * SUW * Be * Ng * sg * dg * ig + (Po + a) * Nq * sq * dq * iq # eq.4.4.2.1
 
-- **eq.4.4.4.1**  
-  qu = F * (5.14 * Su0 + k * Be / 4) * (1 + sc + dc - ic)
+- Undrained linearly increasing Su
 
 .. code-block:: python
 
@@ -100,5 +93,5 @@ Note:
     sc = 0.2 * (1 - 2 * ic) * Be / L
     dc = 0.3 * Su1 / Su2 * np.arctan(D / Be)
 
-    qu = F * (5.14 * Su0 + k * Be / 4) * (1 + sc + dc - ic)
+    qu = F * (5.14 * Su0 + k * Be / 4) * (1 + sc + dc - ic) # eq.4.4.4.1
 
