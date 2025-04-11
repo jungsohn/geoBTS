@@ -88,13 +88,13 @@ Note:
 
     qu = 0.5 * SUW * Be * Ng * sg * dg * ig + (Po + a) * Nq * sq * dq * iq # eq.4.4.2.1
 
-- Undrained linearly increasing Su
+- 4.4.4 Undrained linearly increasing Su
 
 .. code-block:: python
 
     Fh1 = Fh - Rho - Rhp
     ic = 0.5 - 0.5 * np.sqrt(1 - Fh1 / (Ae * su))
-    sc = 0.2 * (1 - 2 * ic) * Be / L
+    sc = scv * (1 - 2 * ic) * Be / L
     dc = 0.3 * Su1 / Su2 * np.arctan(D / Be)
 
     qu = F * (5.14 * Su0 + k * Be / 4) * (1 + sc + dc - ic) # eq.4.4.4.1
