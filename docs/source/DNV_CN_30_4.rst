@@ -72,9 +72,12 @@ Note:
 4.4 Bearing capacity formulae
 ..............................
 
-- Drained
+- 4.4.2 Fully drained
 
 .. code-block:: python
+
+    Nq
+    Ng
 
     a = c / np.tan(np.radians(phi))
     iq = (1 - 0.5 * Fh / (Fv + 1e-9))**5
