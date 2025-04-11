@@ -20,28 +20,25 @@ It is intended for educational use only. Please refer to the official DNV public
 
 .. code-block:: python
 
-    fs = alpha * Cu
-    qp = 9 * Cu * Fc
+    fs = alpha * Cu    # 2.2.2.4
+    qp = 9 * Cu * Fc   # 2.2.2.7
 
 Note: 
    - r = pile aspect ratio = L/D
 
 **Beta method**  
-fs = K * β * Po  
 
 .. code-block:: python
 
     beta = np.tan(np.radians(delta))
     K = 1 - np.sin(np.radians(phi))
-    fs = K * beta * Po
+    fs = K * beta * Po      # 2.2.2.11
 
 **Lambda method**  
-Rs = λ * (Sm + 2 * Cm) * As
-
 
 .. code-block:: python
 
-    Rs = lam * (Sm + 2 * Cm) * As
+    Rs = lam * (Sm + 2 * Cm) * As   # 2.2.2.13
 
 Note:
    - Sm: mean effectiver overburden pressure
@@ -55,16 +52,10 @@ Note:
 3.2 Cohesive soils
 ...................
 
-- **eq.3.2.1.2a**  
-  Pu = (3 * Cu + SUW * X) * D + J * Cu * X
-
-- **eq.3.2.2.1**  
-  P / Pu = 0.5 * (y / yc)**(1/3)
-
 .. code-block:: python
 
-    Pu = (3 * Cu + SUW * X) * D + J * Cu * X
-    P_ratio = 0.5 * (y / yc)**(1/3)
+    Pu = (3 * Cu + SUW * X) * D + J * Cu * X  # eq.3.2.1.2a
+    P_ratio = 0.5 * (y / yc)**(1/3)           # eq.3.2.2.1
 
 3.3 Cohesionless soils
 .......................
