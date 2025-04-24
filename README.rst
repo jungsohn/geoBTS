@@ -3,10 +3,9 @@ geoBTS
 
 미국 지반공학 실무 핸드북
 
-Contents
----------
 
 1. Offshore
+---------
 
   - Codes
 
@@ -29,6 +28,8 @@ Contents
 
 
 2. Onshore
+---------
+
   - Shallow Foundation Design
 
   - Pile Design
