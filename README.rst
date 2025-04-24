@@ -23,6 +23,10 @@ Contents
 
   - Digital Twin DB
 
+    - GoM Map
+    - NGI Lab
+
+
 
 2. Onshore
   - Shallow Foundation Design
