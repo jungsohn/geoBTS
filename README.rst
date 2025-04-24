@@ -18,7 +18,7 @@ geoBTS
 
     - Mudmat
 
-      - Clay
+      - Clay: https://bp-mudmat-20102c78b6f4.herokuapp.com/OTC2010_clay_eg1
       - Sand
 
     - Pipe Soil Interaction (PSI)
