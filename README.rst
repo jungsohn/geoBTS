@@ -13,12 +13,12 @@ geoBTS
     - ISO
     - DNV
 
-  - Design
+  - Shallow Foundation Design
 
     - Mudmat
     - Pipe Soil Interaction (PSI)
-    - Suction Pile
-    - Driven Pile
+  
+  - Pile Design
 
       - alpha
       - beta
