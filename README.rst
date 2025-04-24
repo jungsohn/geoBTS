@@ -9,9 +9,10 @@ geoBTS
 
   - Codes
 
-    - API
+    - API: https://bp-code-568422d56e57.herokuapp.com/API_RP_2GEO_2021
     - ISO
-    - DNV
+    - DNV F114: https://bp-code-568422d56e57.herokuapp.com/DNVGL_RP_F114_2019
+    - DNV CN 30.4: https://bp-code-568422d56e57.herokuapp.com/DNV_CN_30_4_1992
 
   - Shallow Foundation Design
 
