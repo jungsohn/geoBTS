@@ -27,9 +27,16 @@ geoBTS
     - alpha
     - beta
 
-  - Digital Twin DB
+  - Digital Twin 
 
     - GoM Map
+
+    - GoM DB
+
+      - ISB & TT
+      - DSS
+      - CK0U
+
     - NGI Lab
 
 
