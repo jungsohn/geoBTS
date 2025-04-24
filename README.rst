@@ -39,6 +39,8 @@ geoBTS
 
     - NGI Lab
 
+      - Index Testing
+      - SOLT
 
 
 2. Onshore
