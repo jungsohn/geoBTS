@@ -16,12 +16,16 @@ geoBTS
   - Shallow Foundation Design
 
     - Mudmat
+
+      - Clay
+      - Sand
+
     - Pipe Soil Interaction (PSI)
   
   - Pile Design
 
-      - alpha
-      - beta
+    - alpha
+    - beta
 
   - Digital Twin DB
 
